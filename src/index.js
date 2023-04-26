@@ -12,6 +12,9 @@ const theme = createTheme({
     primary: {
       main: "#F0A72C",
     },
+    secondary: {
+      main: "#FFFFFF",
+    },
   },
   typography: {
     fontFamily: "Poppins, sans-serif",
@@ -26,7 +29,6 @@ const theme = createTheme({
     },
   },
 });
-
 
 root.render(
   // <React.StrictMode>

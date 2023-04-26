@@ -1,5 +1,4 @@
-import { Box, Typography } from "@mui/material";
-// import "./index.css";
+import { Typography } from "@mui/material";
 import NavBar from "./components/navbar";
 import About from "./pages/about";
 import Marketplace from "./pages/marketplace";
