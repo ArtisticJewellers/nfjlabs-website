@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider, createTheme } from "@mui/material";
@@ -13,11 +12,21 @@ const theme = createTheme({
     primary: {
       main: "#F0A72C",
     },
-    // secondary: {
-    //   main: green[500],
-    // },
+  },
+  typography: {
+    fontFamily: "Poppins, sans-serif",
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          boxShadow: "none",
+        },
+      },
+    },
   },
 });
+
 
 root.render(
   // <React.StrictMode>
