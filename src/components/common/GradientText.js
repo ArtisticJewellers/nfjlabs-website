@@ -1,16 +1,21 @@
 import { styled } from "@mui/material/styles";
 import { Typography } from "@mui/material";
 
-const GradientTypography = styled(Typography)(({ theme }) => ({
-  backgroundImage:
-    "linear-gradient(90deg, #000000 -4.69%, #ECA830 48.02%, #000000 103.89%)",
-  backgroundClip: "text",
-  color: "transparent",
-  fontWeight: 700,
-}));
+const GradientText = ({ text, variant, titleW, titleM }) => {
+  const GradientTypography = styled(Typography)(({ theme }) => ({
+    backgroundImage:
+      "linear-gradient(90deg, #000000 -4.69%, #ECA830 48.02%, #000000 103.89%)",
+    backgroundClip: "text",
+    color: "transparent",
+    fontWeight: titleM || titleW ? 400 : 700,
+    fontFamily: titleM || titleW ? "" : "Cormorant",
+  }));
 
-const GradientText = ({ text }) => {
-  return <GradientTypography variant="h4">{text}</GradientTypography>;
+  return (
+    <GradientTypography variant={titleW ? "h2" : titleM ? "h4" : "h4"}>
+      {text}
+    </GradientTypography>
+  );
 };
 
 export default GradientText;

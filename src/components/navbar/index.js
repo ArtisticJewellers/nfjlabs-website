@@ -79,7 +79,7 @@ function NavBar(props) {
       <AppBar
         component="nav"
         sx={{
-          background: "#ffff",
+          backgroundColor: "transparent",
           position: "fixed",
           top: 0,
           // zIndex: 1,
