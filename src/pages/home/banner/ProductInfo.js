@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import OutArrowBtn from "../../../components/common/OutArrowBtn";
 
 const ProductInfo = () => {
   return (
@@ -12,12 +13,7 @@ const ProductInfo = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Typography>
-        <Button
-          sx={{ color: "black", borderColor: "black" }}
-          variant="outlined"
-        >
-          Marketplace
-        </Button>
+        <OutArrowBtn label="Marketplace" />
       </Box>
     </>
   );
