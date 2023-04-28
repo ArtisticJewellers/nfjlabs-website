@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import Trending from "./Trending";
-import lion from "../../../assets/homePage/trending/lion.gif";
+import lion from "../../../assets/homePage/trending/sunLion.gif";
 import ProductInfo from "./ProductInfo";
 
 const Mobile = () => {
