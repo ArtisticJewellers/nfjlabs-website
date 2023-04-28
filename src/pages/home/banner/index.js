@@ -26,7 +26,7 @@ const Banner = () => {
           >
             {/* WEB TITLE DECORATION */}
             <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
-              <GradientText titleW text="Collect NFTs baked with Jewellery" />
+              <GradientText titleW text="Collect NFTs backed with Jewellery" />
             </Box>
             {/* MOBILE TITLE DECORATION*/}
             <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>

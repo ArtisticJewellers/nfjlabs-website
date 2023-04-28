@@ -26,6 +26,7 @@ const theme = createTheme({
         root: {
           boxShadow: "none",
           textTransform: "none",
+          color: "#ffff"
         },
       },
     },
