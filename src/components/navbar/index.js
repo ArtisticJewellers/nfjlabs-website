@@ -79,7 +79,9 @@ function NavBar(props) {
       <AppBar
         component="nav"
         sx={{
-          backgroundColor: "transparent",
+          // background: "linear-gradient(to bottom, #ffff,#ffff, rgba(255, 255, 255, 0))",
+          background: "white",
+          backdropFilter: "blur(5px)",
           position: "fixed",
           top: 0,
           // zIndex: 1,
@@ -87,29 +89,28 @@ function NavBar(props) {
           boxShadow: "none",
         }}
       >
-        <Toolbar sx={{width:{xs:"200%",md:"100%"}}}>
-
+        <Toolbar sx={{ width: { xs: "200%", md: "100%" } }}>
           {/* <Box sx={{background:"green", width:"100%"}}>sdf</Box> */}
-            
-            <Box
-              sx={{
-                mr: 2,
-                display: { xs: "flex", sm: "flex", md: "none" },
-                alignItems: "center",
-                justifyContent: "space-between",
-                width: "100%",
-              }}
+
+          <Box
+            sx={{
+              mr: 2,
+              display: { xs: "flex", sm: "flex", md: "none" },
+              alignItems: "center",
+              justifyContent: "space-between",
+              width: "100%",
+            }}
+          >
+            <GradientText text="NFJ LABS" />
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
             >
-              <GradientText text="NFJ LABS" />
-              <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                edge="start"
-                onClick={handleDrawerToggle}
-              >
-                <MenuIcon />
-              </IconButton>
-            </Box>
+              <MenuIcon />
+            </IconButton>
+          </Box>
 
           <Container>
             {/* LEFT NAV BUTTONS  */}
