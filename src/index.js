@@ -18,12 +18,14 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "Poppins, sans-serif",
+    textTransform: 'none',
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
           boxShadow: "none",
+          textTransform: "none",
         },
       },
     },
