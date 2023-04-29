@@ -30,7 +30,7 @@ const Banner = () => {
             </Box>
             {/* MOBILE TITLE DECORATION*/}
             <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>
-              <GradientText titleM text="Collect NFTs baked with Jewellery" />
+              <GradientText titleM text="Collect NFTs backed with Jewellery" />
             </Box>
           </Box>
         </Centered>

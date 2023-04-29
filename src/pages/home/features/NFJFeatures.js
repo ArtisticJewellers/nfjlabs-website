@@ -40,7 +40,6 @@ const NFJFeatures = () => {
         <Box sx={{ width: "50%", marginBottom: "40px", }}>
           <Centered>
             <div>
-              {" "}
               <Box
                 sx={{
                   width: {
