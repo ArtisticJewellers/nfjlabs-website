@@ -5,6 +5,7 @@ import Marketplace from "./marketplace";
 import Metaverse from "./Metaverse";
 import Features from "./features";
 import Collaborations from "./collaborations";
+import Partners from "./partners";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Metaverse />
       <Features />
       <Collaborations />
+      <Partners />
     </>
   );
 };
