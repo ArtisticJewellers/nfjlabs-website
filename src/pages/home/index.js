@@ -7,6 +7,7 @@ import Features from "./features";
 import Collaborations from "./collaborations";
 import Partners from "./partners";
 import FAQ from "./faq";
+import Footer from "./footer";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Collaborations />
       <Partners />
       <FAQ />
+      <Footer />
     </>
   );
 };

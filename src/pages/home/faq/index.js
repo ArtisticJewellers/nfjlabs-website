@@ -40,7 +40,7 @@ const FAQ = () => {
             backgroundImage: `url(${backgroundImage})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "top right",
-            backgroundSize: "35%",
+            backgroundSize: "25%",
             paddingY:{xs:"50px", sm:"100px", md:"150px"}
           }}
         >
