@@ -1,6 +1,6 @@
 import React from "react";
 import Row from "../../../components/common/Row";
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 
 const StoryCard = ({ title, writer, views, image }) => {
@@ -30,11 +30,17 @@ const StoryCard = ({ title, writer, views, image }) => {
 
 const Web = ({ stories }) => {
   return (
-    <Row sx={{ marginTop: 5 }}>
-      {stories.map((story) => (
-        <StoryCard {...story} />
-      ))}
-    </Row>
+    <>
+      <Typography sx={{ fontSize: "28px", fontWeight: 700,marginTop: 5 }}>
+        Top Stories
+      </Typography>
+      <Row sx={{ marginTop: 1, marginBottom:4 }}>
+        {stories.map((story) => (
+          <StoryCard {...story} />
+        ))}
+      </Row>
+      <Divider />
+    </>
   );
 };
 
