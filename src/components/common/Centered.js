@@ -5,7 +5,6 @@ const Centered = ({ children }) => {
   return (
     <Box
       sx={{
-          // background: "black",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
