@@ -22,14 +22,14 @@ const WebCarousel = ({ slidesData }) => {
 };
 
 const MobileCarousel = ({ slidesData }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const onSlideChange = (num) => {
-    setCurrentSlide(num);
-  };
+  // const [currentSlide, setCurrentSlide] = useState(0);
+  // const onSlideChange = (num) => {
+  //   setCurrentSlide(num);
+  // };
 
   return (
     <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>
-      <Carousel center onChange={onSlideChange}>
+      <Carousel center >
         {slidesData.map((slide) => (
           <Slide slide={slide} />
         ))}

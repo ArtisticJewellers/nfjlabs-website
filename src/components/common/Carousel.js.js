@@ -1,4 +1,4 @@
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Slider from "react-slick";
 
@@ -19,9 +19,9 @@ const Carousel = ({ children, onChange, center }) => {
   };
 
   return (
-    // <Container>
-      <Slider {...settings}>{children}</Slider>
-    // </Container>
+    <Box sx={{overflowX:"hidden"}}>
+    <Slider {...settings}>{children}</Slider>
+  </Box>
   );
 };
 

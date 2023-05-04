@@ -21,7 +21,7 @@ const Mobile = ({ slide }) => {
           borderRadius: "10px",
         }}
       ></Box>
-      <Box marginTop={1} sx={{marginX:2}}>
+      <Box marginTop={1} sx={{ marginX: 2 }}>
         <Typography
           sx={{ fontWeight: 500, fontSize: "14px", color: "#2E2E2E" }}
         >
@@ -35,7 +35,7 @@ const Mobile = ({ slide }) => {
             </Typography>
           </Row>
 
-          <Typography sx={{ fontSize: 11, color: "#1E1E1E" }}>
+          <Typography sx={{ fontSize: 11, color: "#808080" }}>
             2 hours ago
           </Typography>
         </Row>
