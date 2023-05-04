@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "./Slider.js";
+import Slider from "./Slider/index.js";
 import { Box } from "@mui/material";
 
 const Blog = () => {
