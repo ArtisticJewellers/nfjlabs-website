@@ -5,12 +5,8 @@ import Centered from "../../../components/common/Centered";
 import backgroundImage from "../../../assets/homePage/collaborations/webBackground.png";
 
 const Web = ({ collaborators }) => {
-  useEffect(() => {
-    console.log("the collaborators are ----->", collaborators);
-  }, []);
 
   const DisplayCollab = ({ name, image }) => {
-    console.log("inside collab----->", name);
     return (
       <>
         <Box
