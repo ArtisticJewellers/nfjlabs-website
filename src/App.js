@@ -2,9 +2,9 @@ import { Typography } from "@mui/material";
 import NavBar from "./components/navbar";
 import About from "./pages/about";
 import Marketplace from "./pages/marketplace";
-import Blog from "./pages/blog";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
+import Blog from "./pages/blog";
 
 function App() {
   return (

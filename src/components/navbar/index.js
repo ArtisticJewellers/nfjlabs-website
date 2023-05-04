@@ -80,8 +80,8 @@ function NavBar(props) {
         component="nav"
         sx={{
           // background: "linear-gradient(to bottom, #ffff,#ffff, rgba(255, 255, 255, 0))",
-          background: "white",
-          backdropFilter: "blur(5px)",
+          background: "#ffffff80",
+          backdropFilter: "blur(10px)",
           position: "fixed",
           top: 0,
           // zIndex: 1,
@@ -142,7 +142,7 @@ function NavBar(props) {
 
               {/* RIGHT NAV BUTTONS  */}
               <Box>
-                <Button sx={{ color: "black" }}>Blog</Button>
+                <Button sx={{ color: "black" }} onClick={()=>{navigate(`/blog`);}}>Blog</Button>
                 <Button sx={{ color: "black" }}>log in</Button>
                 <Button
                   sx={{ color: "#ffff", marginLeft: "10px" }}
@@ -170,6 +170,8 @@ function NavBar(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              background: "#ffffff70",
+              backdropFilter: "blur(10px)"
             },
           }}
         >
