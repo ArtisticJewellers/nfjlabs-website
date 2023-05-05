@@ -20,7 +20,7 @@ const Category1 = () => {
         sx={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-evenly",
+          justifyContent: {xs:"space-between", sm:"space-around",md:"space-evenly"},
           flexWrap: "wrap",
           marginTop:"30px"
         }}

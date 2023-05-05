@@ -143,6 +143,7 @@ function NavBar(props) {
 
               {/* RIGHT NAV BUTTONS  */}
               <Row sx={{ width: "36%", justifyContent: "center" }}>
+                <Box flexGrow={1}/>
                 <Button
                   sx={{ color: "black" }}
                   onClick={() => {
