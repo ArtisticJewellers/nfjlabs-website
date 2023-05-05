@@ -62,7 +62,7 @@ const Artist = () => {
             margin: "35px",
             width: "100%",
             // height:"585px",
-            padding: "35px",
+            padding: {xs:"35px", sm:"35px", md:"50px"},
             background:
               "linear-gradient(to bottom right, #f7e8cd 8.3%, rgba(255, 218, 164, 0) 89.02%)",
             borderRadius: "10px",
