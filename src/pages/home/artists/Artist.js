@@ -3,6 +3,7 @@ import React from "react";
 import OutArrowBtn from "../../../components/common/OutArrowBtn";
 import artist from "../../../assets/homePage/artists/artist.png";
 
+
 const Artist = () => {
   const ArtistInfo = () => {
     return (
@@ -31,7 +32,7 @@ const Artist = () => {
           <Typography
             width="90%"
             fontSize="18px"
-            sx={{ display: { xs: "none", sm: "none", md: "block" }, marginBottom:"10px" }}
+            sx={{ display: { xs: "none", sm: "none", md: "block" }, marginBottom:"30px" }}
           >
             A fiercely proud Roman, he divides his time between his home in the
             medieval village of Bagnoregio, Italy and Bangkok, Thailand, where
@@ -40,7 +41,7 @@ const Artist = () => {
           </Typography>
           <Button
             sx={{
-              borderRadius: "10px",
+              borderRadius: "5px",
               color: "#ffff",
               // width: "20%",
               fontSize: { xs: "10px", sm: "15px", md: "20px" },
