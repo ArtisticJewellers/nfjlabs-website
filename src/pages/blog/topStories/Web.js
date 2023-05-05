@@ -31,10 +31,10 @@ const StoryCard = ({ title, writer, views, image }) => {
 const Web = ({ stories }) => {
   return (
     <>
-      <Typography sx={{ fontSize: "28px", fontWeight: 700,marginTop: 5 }}>
+      <Typography sx={{ fontSize: "28px", fontWeight: 700, marginTop: 5 }}>
         Top Stories
       </Typography>
-      <Row sx={{ marginTop: 1, marginBottom:4 }}>
+      <Row sx={{ marginTop: 1, marginBottom: 4 }}>
         {stories.map((story) => (
           <StoryCard {...story} />
         ))}
