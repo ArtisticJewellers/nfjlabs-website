@@ -3,6 +3,7 @@ import Slider from "./Slider/index.js";
 import { Box } from "@mui/material";
 import TopStories from "./topStories/index.js";
 import AditionalStoriesLayout from "./AditionalStoriesLayout.js";
+import Subscribe from "./subscribe/index.js";
 
 const Blog = () => {
   return (
@@ -13,6 +14,7 @@ const Blog = () => {
       <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
         <AditionalStoriesLayout />
       </Box>
+      <Subscribe />
     </>
   );
 };
