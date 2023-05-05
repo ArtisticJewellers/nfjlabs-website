@@ -17,7 +17,7 @@ const Metaverse = () => {
       }}
     >
       <Centered>
-        <Typography sx={{ fontWeight: 500, fontSize: { xs: "15px", sm: "18px", md: "20px" }, color: "#734b21" }}>
+        <Typography sx={{ fontWeight: 500, fontSize: { xs: "15px", sm: "18px", md: "25px" }, color: "#734b21" }}>
           Check our{" "}
           <a href="https://example.com/metaverse" style={{ color: "#734b21" }}>
             Metaverse
