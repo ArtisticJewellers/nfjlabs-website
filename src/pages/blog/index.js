@@ -10,7 +10,9 @@ const Blog = () => {
       <Box sx={{ mt: 10 }} />
       <Slider />
       <TopStories />
-      <AditionalStoriesLayout />
+      <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
+        <AditionalStoriesLayout />
+      </Box>
     </>
   );
 };
