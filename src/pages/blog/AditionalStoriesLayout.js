@@ -9,13 +9,14 @@ const AditionalStoriesLayout = () => {
   return (
     <>
       <Container>
-        <Row>
-          <Box width="75%">
+        <Row sx={{alignItems:"start"}}>
+          <Box width="70%">
             <MoreStories />
           </Box>
-          <Box width="25%">
+          <Box width="27%" alignSelf="start">
             <Trending />
-            <Highlights />
+            <Trending />
+            {/* <Highlights /> */}
           </Box>
         </Row>
       </Container>
