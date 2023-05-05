@@ -15,8 +15,7 @@ const AditionalStoriesLayout = () => {
           </Box>
           <Box width="27%" alignSelf="start">
             <Trending />
-            <Trending />
-            {/* <Highlights /> */}
+            <Highlights />
           </Box>
         </Row>
       </Container>
