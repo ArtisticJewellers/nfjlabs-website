@@ -17,6 +17,7 @@ import { useNavigate } from "react-router-dom";
 import { Container } from "@mui/material";
 import GradientText from "../common/GradientText";
 import Centered from "../common/Centered";
+import Row from "../common/Row";
 
 const drawerWidth = 240;
 
@@ -113,7 +114,6 @@ function NavBar(props) {
           </Box>
 
           <Container>
-            {/* LEFT NAV BUTTONS  */}
             <Box
               sx={{
                 display: { xs: "none", sm: "none", md: "flex" },
@@ -123,7 +123,8 @@ function NavBar(props) {
                 width: "100%",
               }}
             >
-              <Box display="flex">
+              {/* LEFT NAV BUTTONS  */}
+              <Box display="flex" width="36%">
                 {leftNavItems.map((item, index) => (
                   <Button
                     key={item}
@@ -141,8 +142,15 @@ function NavBar(props) {
               <GradientText text="NFJ LABS" />
 
               {/* RIGHT NAV BUTTONS  */}
-              <Box>
-                <Button sx={{ color: "black" }} onClick={()=>{navigate(`/blog`);}}>Blog</Button>
+              <Row sx={{ width: "36%", justifyContent: "center" }}>
+                <Button
+                  sx={{ color: "black" }}
+                  onClick={() => {
+                    navigate(`/blog`);
+                  }}
+                >
+                  Blog
+                </Button>
                 <Button sx={{ color: "black" }}>log in</Button>
                 <Button
                   sx={{ color: "#ffff", marginLeft: "10px" }}
@@ -150,7 +158,7 @@ function NavBar(props) {
                 >
                   sign up
                 </Button>
-              </Box>
+              </Row>
             </Box>
           </Container>
         </Toolbar>
@@ -171,7 +179,7 @@ function NavBar(props) {
               boxSizing: "border-box",
               width: drawerWidth,
               background: "#ffffff70",
-              backdropFilter: "blur(10px)"
+              backdropFilter: "blur(10px)",
             },
           }}
         >
