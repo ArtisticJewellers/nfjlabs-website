@@ -13,7 +13,7 @@ const NFJCard = ({ name, gif, type, value }) => {
   return (
     <Box
       sx={{
-        border: "4px solid #F4E1B6",
+        border: {xs:"2px solid #F4E1B6", sm:"4px solid #F4E1B6", md:"4px solid #F4E1B6"},
         borderRadius: "12px",
         width: { xs: "166px", sm: "200px", md: "272px" },
         height: { xs: "240px", sm: "280px", md: "357px" },

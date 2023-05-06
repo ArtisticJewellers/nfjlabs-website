@@ -15,7 +15,10 @@ const Footer = () => {
           justifyContent: "space-between",
         }}
       >
-        <Box alignSelf="center">
+        <Box
+          alignSelf="center"
+          sx={{ display: { xs: "none", sm: "block", md: "block" } }}
+        >
           <Logo />
         </Box>
         <Sitemap />

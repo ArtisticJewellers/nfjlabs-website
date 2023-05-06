@@ -41,11 +41,12 @@ const FAQ = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "top right",
             backgroundSize: "25%",
-            paddingY:{xs:"50px", sm:"100px", md:"150px"}
+            paddingY:{xs:"10px", sm:"100px", md:"150px"},
+            marginTop:3
           }}
         >
           <Centered>
-            <Typography sx={{ fontSize: "40px" }}>FAQs</Typography>
+            <Typography sx={{ fontSize: {xs:"30px",sm:"35px", md:"40px"}, marginY:3}}>FAQs</Typography>
           </Centered>
           {faqs.map((faq) => (
             <AccordionContent summary={faq.question}>

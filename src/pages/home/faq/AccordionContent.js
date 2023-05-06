@@ -17,7 +17,7 @@ const AccordionContent = ({ summary, children }) => {
 
           <Typography
             sx={{
-              fontWeight: 400,
+              fontWeight: 500,
               fontFamily: "Montserrat",
               fontSize: { xs: "15px", sm: "20px", md: "24px" },
             }}

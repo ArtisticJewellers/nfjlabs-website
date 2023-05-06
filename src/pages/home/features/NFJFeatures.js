@@ -64,7 +64,7 @@ const NFJFeatures = () => {
                 sx={{
                   fontWeight: 500,
                   fontSize: {
-                    xs: "15px",
+                    xs: "17px",
                     sm: "22px",
                     md: "28px",
                   },

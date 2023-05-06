@@ -11,9 +11,11 @@ const Sitemap = () => {
       <Text type2 text="Growers" />
       <Text type2 text="Merchants" />
       <Text type2 text="Contact" />
-      <Box marginTop="25px" />
-      <Text type2 text="(123)456-7890" />
-      <Text type2 text="contact@Nfj.agency" />
+      <Box sx={{ display: { xs: "none", sm: "block", md: "block" } }}>
+        <Box marginTop="25px" />
+        <Text type2 text="(123)456-7890" />
+        <Text type2 text="contact@Nfj.agency" />
+      </Box>
     </div>
   );
 };

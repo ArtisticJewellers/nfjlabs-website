@@ -20,7 +20,7 @@ const Collaborations = () => {
             sx={{
               fontWeight: 700,
               fontSize: { xs: "25px", sm: "35px", md: "48px" },
-              marginY: { xs: "10px", sm: "20px", md: "20px" },
+              marginY: { xs: "50px", sm: "20px", md: "20px" },
             }}
           >
             Collaborations

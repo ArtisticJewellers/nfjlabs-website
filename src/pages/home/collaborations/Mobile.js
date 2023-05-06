@@ -14,6 +14,7 @@ const Mobile = ({ collaborators }) => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             borderRadius: "10px",
+            paddingY:2
           }}
         >
           <Box

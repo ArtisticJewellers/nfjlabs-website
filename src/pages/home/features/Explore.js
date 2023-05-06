@@ -1,7 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
-import backgroundImage from "../../../assets/homePage/features/backgroundTexture.png";
-import { Height } from "@mui/icons-material";
+import Centered from "../../../components/common/Centered";
 import ExploreBtn from "./ExploreBtn";
 
 const Explore = () => {
@@ -20,10 +19,11 @@ const Explore = () => {
         },
       }}
     >
+      {/* <Centered> */}
       <Typography
         sx={{
           fontWeight: 700,
-          fontSize:  {
+          fontSize: {
             xs: "30px",
             sm: "35px",
             md: "40px",
@@ -38,14 +38,21 @@ const Explore = () => {
             sm: "center",
             md: "left",
           },
+          paddingX: {
+            xs: "5%",
+            sm: "0%",
+            md: "0%",
+          },
         }}
       >
         Why jewellery should have been NFT
       </Typography>
+      {/* </Centered> */}
+
       <Typography
         sx={{
           fontWeight: 400,
-          fontSize:  {
+          fontSize: {
             xs: "15px",
             sm: "20px",
             md: "20px",
@@ -61,6 +68,11 @@ const Explore = () => {
             sm: "center",
             md: "left",
           },
+          paddingX: {
+            xs: "5%",
+            sm: "0%",
+            md: "0%",
+          }
         }}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
