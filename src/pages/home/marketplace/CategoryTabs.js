@@ -13,15 +13,24 @@ const CategoryTabs = () => {
     fontSize: "28px",
     flexDirection: "row-reverse",
     textTransform: "none",
-    fontWeight: 400
+    fontWeight: 400,
+    transition: "all 0.2s ease-in-out"
+  };
 
+  const inactiveTabStyle = {
+    fontSize: "20px",
+    color: "#a3a19e",
+    flexDirection: "row-reverse",
+    textTransform: "none",
+    fontWeight: 400,
+    transition: "all 0.2s ease-in-out"
   };
 
   const ActiveIcon = () => {
     return <SouthEast sx={{ marginLeft: "5px", fontSize: "30px"}} />;
   };
   const InActiveIcon = () => {
-    return <CallMade sx={{ marginLeft: "5px", fontSize: "30px" }} />;
+    return <CallMade sx={{ marginLeft: "5px", fontSize: "25px" }} />;
   };
 
   return (
@@ -30,22 +39,22 @@ const CategoryTabs = () => {
         <Tab
           label="Category1"
           icon={0 === value ? <ActiveIcon /> : <InActiveIcon />}
-          sx={tabStyle}
+          sx={0 === value ? tabStyle : inactiveTabStyle}
         />
         <Tab
           label="Category2"
           icon={1 === value ? <ActiveIcon /> : <InActiveIcon />}
-          sx={tabStyle}
+          sx={1 === value ? tabStyle : inactiveTabStyle}
         />
         <Tab
           label="Category3"
           icon={2 === value ? <ActiveIcon /> : <InActiveIcon />}
-          sx={tabStyle}
+          sx={2 === value ? tabStyle : inactiveTabStyle}
         />
         <Tab
           label="Category4"
           icon={3 === value ? <ActiveIcon /> : <InActiveIcon />}
-          sx={tabStyle}
+          sx={3 === value ? tabStyle : inactiveTabStyle}
         />
       </Tabs>
     </Container>

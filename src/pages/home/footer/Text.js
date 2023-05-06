@@ -5,7 +5,7 @@ const Text = ({ text, type1, type2, type3, type4, type5 }) => {
   return (
     <Typography
       sx={{
-        fontFamily: type5 ? "Cormorant" : "Montserrat",
+        fontFamily: "Montserrat",
         fontSize: type1
           ? { xs: "15px", sm: "15px", md: "18px" }
           : type2 || type3 || type5
