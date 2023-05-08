@@ -65,8 +65,8 @@ function NavBar(props) {
             navigate("/blog");
           }}
         />
-        <LstItem item="Log in" onClick={() => {}} />
-        <LstItem item="Sign up" onClick={() => {}} />
+        {/* <LstItem item="Log in" onClick={() => {}} />
+        <LstItem item="Sign up" onClick={() => {}} /> */}
       </List>
     </Box>
   );
@@ -152,13 +152,13 @@ function NavBar(props) {
                 >
                   Blog
                 </Button>
-                <Button sx={{ color: "black" }}>log in</Button>
+                {/* <Button sx={{ color: "black" }}>log in</Button>
                 <Button
                   sx={{ color: "#ffff", marginLeft: "10px" }}
                   variant="contained"
                 >
                   sign up
-                </Button>
+                </Button> */}
               </Row>
             </Box>
           </Container>
