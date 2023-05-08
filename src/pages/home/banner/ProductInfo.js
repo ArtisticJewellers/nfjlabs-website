@@ -10,8 +10,10 @@ const ProductInfo = () => {
           Product Name
         </Typography>
         <Typography width="300px" marginTop="20px" marginBottom="20px">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Our lion-and-sun jewelry combines the strength and courage of the lion
+          with the vitality and energy of the sun to create a truly
+          one-of-a-kind piece. Crafted with care and precision, this jewelry is
+          a true work of art.
         </Typography>
         <OutArrowBtn label="Marketplace" />
       </Box>
