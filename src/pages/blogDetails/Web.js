@@ -14,7 +14,7 @@ const Web = ({blogDetail}) => {
       <Container>
         <BlogBanner slide={blogDetail} />
         <Row></Row>
-        <Body {...blogDetail} />
+        <Body web {...blogDetail} />
       </Container>
       <TopStories />
     </>

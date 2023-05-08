@@ -2,29 +2,32 @@ import React from "react";
 import Row from "../../../components/common/Row";
 import { Box, Divider, Typography } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
+import Navigate from "../../../components/common/Navigate";
 
 const StoryCard = ({ title, writer, views, image }) => {
   return (
     <Box sx={{ width: "18%" }}>
-      <img src={image} style={{ borderRadius: "5px" }} width="100%" />
-      <Typography sx={{ fontWeight: 700, fontSize: "18px" }}>
-        {title}
-      </Typography>
-      <Row sx={{ justifyContent: "start" }}>
-        <Typography sx={{ fontSize: "13px", color: "#808080" }}>
-          {writer}
+        <Navigate to="/blog/1">
+        <img src={image} style={{ borderRadius: "5px" }} width="100%" />
+        <Typography sx={{ fontWeight: 700, fontSize: "18px" }}>
+          {title}
         </Typography>
-        <CheckCircle sx={{ fontSize: "18px", marginLeft: 2 }} />
-      </Row>
-      <Row>
-        <Typography sx={{ fontSize: "13px", color: "#808080" }}>
-          {`${views} views`}
-        </Typography>
-        <Typography sx={{ fontSize: "13px", color: "#808080" }}>
-          2hours ago
-        </Typography>
-      </Row>
-    </Box>
+        <Row sx={{ justifyContent: "start" }}>
+          <Typography sx={{ fontSize: "13px", color: "#808080" }}>
+            {writer}
+          </Typography>
+          <CheckCircle sx={{ fontSize: "18px", marginLeft: 2 }} />
+        </Row>
+        <Row>
+          <Typography sx={{ fontSize: "13px", color: "#808080" }}>
+            {`${views} views`}
+          </Typography>
+          <Typography sx={{ fontSize: "13px", color: "#808080" }}>
+            2hours ago
+          </Typography>
+        </Row>
+    </Navigate>
+      </Box>
   );
 };
 
