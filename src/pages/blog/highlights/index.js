@@ -6,7 +6,7 @@ import ts3 from "../../../assets/blog/trendingStories/ts3.png";
 import ts4 from "../../../assets/blog/trendingStories/ts4.png";
 import HighlightsStoryCard from "./HighlightsStoryCard";
 
-const Highlights = () => {
+const Highlights = ({ blogDetail }) => {
   const trendingStories = [
     {
       title: " Lorem ipsum dolor siamet, consectetur lor em dolo.",
@@ -46,7 +46,13 @@ const Highlights = () => {
   ];
   return (
     <>
-      <Typography sx={{ fontSize: "28px", fontWeight: 700, marginTop: 5 }}>
+      <Typography
+        sx={{
+          fontSize: "28px",
+          fontWeight: 700,
+          marginTop: blogDetail ? 0 : 5,
+        }}
+      >
         Highlights
       </Typography>
       <Box sx={{ border: "1px solid #cfceca", borderRadius: "10px" }}>

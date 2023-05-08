@@ -5,6 +5,7 @@ import Marketplace from "./pages/marketplace";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import Blog from "./pages/blog";
+import BlogDetails from "./pages/blogDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
       </Routes>
     </>
   );
