@@ -15,13 +15,13 @@ const NFJCard = ({ name, gif, type, value }) => {
       sx={{
         border: {xs:"2px solid #F4E1B6", sm:"4px solid #F4E1B6", md:"4px solid #F4E1B6"},
         borderRadius: "12px",
-        width: { xs: "166px", sm: "200px", md: "272px" },
-        height: { xs: "240px", sm: "280px", md: "357px" },
+        width: { xs: "45%", sm: "200px", md: "272px" },
+        height: { xs: "100%", sm: "280px", md: "357px" },
         overflow: "hidden",
         margin: "5px",
       }}
     >
-      <Box sx={{ width: { xs: "166px", sm: "200px", md: "272px" } }}>
+      <Box sx={{ width: { xs: "95%", sm: "200px", md: "272px" } }}>
         <img width="100%" src={gif} alt="NFT" />
       </Box>
 
@@ -40,7 +40,7 @@ const NFJCard = ({ name, gif, type, value }) => {
             fontWeight: 500,
           }}
         >
-          {truncateString(name, 15)}
+          {truncateString(name, 13)}
         </Typography>
         <Box
           sx={{
@@ -66,6 +66,7 @@ const NFJCard = ({ name, gif, type, value }) => {
           alignItems: "center",
           justifyContent: "space-between",
           px: 2,
+          mb:{ xs: 2, sm: 0, md: 0 }
         }}
       >
         <Typography

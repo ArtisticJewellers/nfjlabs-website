@@ -179,8 +179,7 @@ function NavBar(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              background: "#ffffff70",
-              backdropFilter: "blur(10px)",
+              background: "#ffff",
             },
           }}
         >
