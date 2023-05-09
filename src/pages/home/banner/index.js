@@ -26,11 +26,11 @@ const Banner = () => {
           >
             {/* WEB TITLE DECORATION */}
             <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
-              <GradientText titleW text="Collect NFTs backed with Jewellery" />
+              <GradientText titleW text="Jwellery paired with NFTs" />
             </Box>
             {/* MOBILE TITLE DECORATION*/}
             <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>
-              <GradientText titleM text="Collect NFTs backed with Jewellery" />
+              <GradientText titleM text="Jwellery paired with NFTs" />
             </Box>
           </Box>
         </Centered>

@@ -13,11 +13,12 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Container } from "@mui/material";
 import GradientText from "../common/GradientText";
 import Centered from "../common/Centered";
 import Row from "../common/Row";
+import { links } from "../../pages/home/Constants";
 
 const drawerWidth = 240;
 
@@ -32,6 +33,10 @@ function NavBar(props) {
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+  };
+
+  const redirect = (link) => {
+    window.location.href = link;
   };
 
   const LstItem = ({ onClick, item }) => {
@@ -58,13 +63,6 @@ function NavBar(props) {
             }}
           />
         ))}
-
-        {/* <LstItem
-          item="Blog"
-          onClick={() => {
-            navigate("/blog");
-          }}
-        /> */}
         <LstItem item="Marketplace" onClick={() => {}} />
         <LstItem item="Metaverse" onClick={() => {}} />
       </List>
@@ -145,20 +143,19 @@ function NavBar(props) {
               <Row sx={{ width: "36%", justifyContent: "center" }}>
                 <Box flexGrow={1} />
                 <Button
-                  sx={{ color: "black" }}
-                  onClick={() => {
-                    navigate(`/blog`);
-                  }}
+                  sx={{ color: "black", textDecoration: "none" }}
+                  component={Link}
+                  to={links.marketplace}
                 >
                   Marketplace
                 </Button>
-                <Button sx={{ color: "black" }}>Metaverse</Button>
-                {/* <Button
-                  sx={{ color: "#ffff", marginLeft: "10px" }}
-                  variant="contained"
+                <Button
+                  sx={{ color: "black", textDecoration: "none" }}
+                  component={Link}
+                  to={links.metaverse}
                 >
-                  sign up
-                </Button>  */}
+                  Metaverse
+                </Button>
               </Row>
             </Box>
           </Container>
