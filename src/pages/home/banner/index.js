@@ -6,6 +6,7 @@ import backgroundImage from "../../../assets/homePage/bannerBackgroundTexture.pn
 import Trending from "./Trending";
 import Web from "./Web";
 import Mobile from "./Mobile";
+import TypeAnimation from "./TypeAnimation";
 
 const Banner = () => {
   return (
@@ -21,18 +22,7 @@ const Banner = () => {
     >
       <Container>
         <Centered>
-          <Box
-            sx={{ width: { sm: "500px", md: "700px" }, textAlign: "center" }}
-          >
-            {/* WEB TITLE DECORATION */}
-            <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
-              <GradientText titleW text="Jwellery paired with NFTs" />
-            </Box>
-            {/* MOBILE TITLE DECORATION*/}
-            <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>
-              <GradientText titleM text="Jwellery paired with NFTs" />
-            </Box>
-          </Box>
+          <TypeAnimation />
         </Centered>
         <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
           <Web />
