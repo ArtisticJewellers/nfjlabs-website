@@ -22,9 +22,9 @@ import Row from "../common/Row";
 const drawerWidth = 240;
 
 function NavBar(props) {
-  const leftNavItems = ["Home", "Marketplace", "About us"];
+  const leftNavItems = ["Home", "About us", "Blog"];
 
-  const leftNavRoutes = ["", "marketplace", "about"];
+  const leftNavRoutes = ["", "about", "blog"];
 
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -59,14 +59,14 @@ function NavBar(props) {
           />
         ))}
 
-        <LstItem
+        {/* <LstItem
           item="Blog"
           onClick={() => {
             navigate("/blog");
           }}
-        />
-        {/* <LstItem item="Log in" onClick={() => {}} />
-        <LstItem item="Sign up" onClick={() => {}} /> */}
+        /> */}
+        <LstItem item="Marketplace" onClick={() => {}} />
+        <LstItem item="Metaverse" onClick={() => {}} />
       </List>
     </Box>
   );
@@ -143,22 +143,22 @@ function NavBar(props) {
 
               {/* RIGHT NAV BUTTONS  */}
               <Row sx={{ width: "36%", justifyContent: "center" }}>
-                <Box flexGrow={1}/>
+                <Box flexGrow={1} />
                 <Button
                   sx={{ color: "black" }}
                   onClick={() => {
                     navigate(`/blog`);
                   }}
                 >
-                  Blog
+                  Marketplace
                 </Button>
-                {/* <Button sx={{ color: "black" }}>log in</Button>
-                <Button
+                <Button sx={{ color: "black" }}>Metaverse</Button>
+                {/* <Button
                   sx={{ color: "#ffff", marginLeft: "10px" }}
                   variant="contained"
                 >
                   sign up
-                </Button> */}
+                </Button>  */}
               </Row>
             </Box>
           </Container>
