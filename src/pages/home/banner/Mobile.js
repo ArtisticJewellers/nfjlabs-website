@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import Trending from "./Trending";
-import lion from "../../../assets/homePage/trending/sunLion.gif";
+import coin from "../../../assets/homePage/trending/coin.gif";
 import ProductInfo from "./ProductInfo";
 
 const Mobile = () => {
@@ -23,7 +23,7 @@ const Mobile = () => {
             marginBottom: "20px",
           }}
           height="350px"
-          src={lion}
+          src={coin}
         />
         <Trending />
       </Box>

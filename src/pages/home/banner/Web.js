@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import Trending from "./Trending";
-import lion from "../../../assets/homePage/trending/sunLion.gif";
+import coin from "../../../assets/homePage/trending/coin.gif";
 import ProductInfo from "./ProductInfo";
 
 const Web = () => {
@@ -12,11 +12,11 @@ const Web = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          marginTop:"30px"
+          marginTop: "30px",
         }}
       >
         <Trending web />
-        <img style={{ borderRadius: "50px" }} height="350px" src={lion} />
+        <img style={{ borderRadius: "50px" }} height="350px" src={coin} />
         <ProductInfo />
       </Box>
     </>
