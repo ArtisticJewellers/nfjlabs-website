@@ -14,7 +14,7 @@ const CategoryTabs = () => {
     flexDirection: "row-reverse",
     textTransform: "none",
     fontWeight: 400,
-    transition: "all 0.2s ease-in-out"
+    transition: "all 0.2s ease-in-out",
   };
 
   const inactiveTabStyle = {
@@ -23,11 +23,11 @@ const CategoryTabs = () => {
     flexDirection: "row-reverse",
     textTransform: "none",
     fontWeight: 400,
-    transition: "all 0.2s ease-in-out"
+    transition: "all 0.2s ease-in-out",
   };
 
   const ActiveIcon = () => {
-    return <SouthEast sx={{ marginLeft: "5px", fontSize: "30px"}} />;
+    return <SouthEast sx={{ marginLeft: "5px", fontSize: "30px" }} />;
   };
   const InActiveIcon = () => {
     return <CallMade sx={{ marginLeft: "5px", fontSize: "25px" }} />;
@@ -37,24 +37,19 @@ const CategoryTabs = () => {
     <Container sx={{ marginY: "10px" }}>
       <Tabs value={value} onChange={handleChange} centered variant="fullWidth">
         <Tab
-          label="Category1"
+          label="Jewellery"
           icon={0 === value ? <ActiveIcon /> : <InActiveIcon />}
           sx={0 === value ? tabStyle : inactiveTabStyle}
         />
         <Tab
-          label="Category2"
+          label="Gems"
           icon={1 === value ? <ActiveIcon /> : <InActiveIcon />}
           sx={1 === value ? tabStyle : inactiveTabStyle}
         />
         <Tab
-          label="Category3"
+          label="Coins"
           icon={2 === value ? <ActiveIcon /> : <InActiveIcon />}
           sx={2 === value ? tabStyle : inactiveTabStyle}
-        />
-        <Tab
-          label="Category4"
-          icon={3 === value ? <ActiveIcon /> : <InActiveIcon />}
-          sx={3 === value ? tabStyle : inactiveTabStyle}
         />
       </Tabs>
     </Container>

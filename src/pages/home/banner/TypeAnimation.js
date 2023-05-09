@@ -14,7 +14,7 @@ const TypeAnimation = () => {
             backgroundClip: "text",
             color: "transparent",
             fontWeight: 400,
-            fontSize: { xs: "35px", sm: "35px", md: "65px" },
+            fontSize: { xs: "33px", sm: "35px", md: "65px" },
           }}
         >
           <Typewriter
@@ -22,7 +22,7 @@ const TypeAnimation = () => {
               autoStart: true,
               loop: true,
               delay: 50,
-              strings: ["Jewellery", "Gems"],
+              strings: ["Jewellery", "Gems", "Coins"],
               pauseFor: 2000,
               cursorClassName: "Typewriter__cursor",
             }}
