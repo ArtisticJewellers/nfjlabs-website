@@ -2,7 +2,7 @@ import { Box, Button, Container, Typography } from "@mui/material";
 import React from "react";
 import OutArrowBtn from "../../../components/common/OutArrowBtn";
 import artist from "../../../assets/homePage/artists/artist.png";
-
+import Carousel from "../../../components/common/Carousel.js";
 
 const Artist = () => {
   const ArtistInfo = () => {
@@ -22,7 +22,10 @@ const Artist = () => {
           </Typography>
           <Typography
             width="90%"
-            sx={{ fontSize: { xs: "60%", sm: "90%", md: "18px" }, marginY:"10px"}}
+            sx={{
+              fontSize: { xs: "60%", sm: "90%", md: "18px" },
+              marginY: "10px",
+            }}
           >
             Living in the world of our wildest imagination, fueled by an
             unrelenting desire to create the seemingly impossible, Alessio
@@ -32,7 +35,10 @@ const Artist = () => {
           <Typography
             width="90%"
             fontSize="18px"
-            sx={{ display: { xs: "none", sm: "none", md: "block" }, marginBottom:"30px" }}
+            sx={{
+              display: { xs: "none", sm: "none", md: "block" },
+              marginBottom: "30px",
+            }}
           >
             A fiercely proud Roman, he divides his time between his home in the
             medieval village of Bagnoregio, Italy and Bangkok, Thailand, where
@@ -58,12 +64,12 @@ const Artist = () => {
   const ArtistContainer = () => {
     return (
       <>
+      
         <Box
           sx={{
-            margin: "35px",
-            width: "100%",
-            // height:"585px",
-            padding: {xs:"35px", sm:"35px", md:"50px"},
+            marginY: "35px",
+            width: "99%",
+            padding: { xs: "35px", sm: "35px", md: "50px" },
             background:
               "linear-gradient(to bottom right, #f7e8cd 8.3%, rgba(255, 218, 164, 0) 89.02%)",
             borderRadius: "10px",
@@ -92,7 +98,12 @@ const Artist = () => {
           <Box sx={{ alignSelf: "end" }}>
             <OutArrowBtn label="Join Us" />
           </Box>
-          <ArtistContainer />
+          <Box width="100%">
+            <Carousel center>
+              <ArtistContainer />
+              <ArtistContainer />
+            </Carousel>
+          </Box>
         </Box>
       </Container>
     </>
