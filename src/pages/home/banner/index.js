@@ -1,9 +1,7 @@
 import React from "react";
-import GradientText from "../../../components/common/GradientText";
 import { Box, Container } from "@mui/material";
 import Centered from "../../../components/common/Centered";
 import backgroundImage from "../../../assets/homePage/bannerBackgroundTexture.png";
-import Trending from "./Trending";
 import Web from "./Web";
 import Mobile from "./Mobile";
 import TypeAnimation from "./TypeAnimation";

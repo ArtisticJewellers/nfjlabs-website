@@ -3,12 +3,16 @@ import React from "react";
 import ribbon from "../../../assets/homePage/trending/ribbon.png";
 
 import dolce from "../../../assets/homePage/trending/dolce.gif";
+import goldenstan from "../../../assets/homePage/trending/Goldenstan.gif";
+import qajar from "../../../assets/homePage/trending/qajar.gif";
+import lion from "../../../assets/homePage/trending/lion.gif";
+
 
 const DisplayGif = ({ web, src }) => {
   return (
     <>
       <img
-        style={{ borderRadius: "10px" }}
+        style={{ borderRadius: "10px", background:"#ffff" }}
         width={web ? "100px" : "80px"}
         src={src}
       />
@@ -27,13 +31,13 @@ const Web = () => {
               <DisplayGif web src={dolce} />
             </Grid>
             <Grid item xs={6}>
-              <DisplayGif web src={dolce} />
+              <DisplayGif web src={goldenstan} />
             </Grid>
             <Grid item xs={6}>
-              <DisplayGif web src={dolce} />
+              <DisplayGif web src={qajar} />
             </Grid>
             <Grid item xs={6}>
-              <DisplayGif web src={dolce} />
+              <DisplayGif web src={lion} />
             </Grid>
           </Grid>
         </Box>
@@ -53,13 +57,13 @@ const Mobile = () => {
               <DisplayGif src={dolce} />
             </Grid>
             <Grid item xs={3}>
-              <DisplayGif src={dolce} />
+              <DisplayGif src={goldenstan} />
             </Grid>
             <Grid item xs={3}>
-              <DisplayGif src={dolce} />
+              <DisplayGif src={qajar} />
             </Grid>
             <Grid item xs={3}>
-              <DisplayGif src={dolce} />
+              <DisplayGif src={lion} />
             </Grid>
           </Grid>
         </Box>
