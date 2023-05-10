@@ -45,7 +45,7 @@ const Explore = () => {
           },
         }}
       >
-        Why jewellery should have been NFT
+        Why jewellery should have been NFT?
       </Typography>
       {/* </Centered> */}
 
@@ -54,13 +54,13 @@ const Explore = () => {
           fontWeight: 400,
           fontSize: {
             xs: "15px",
-            sm: "20px",
-            md: "20px",
+            sm: "19px",
+            md: "19px",
           },
           width: {
             xs: "100%",
             sm: "100%",
-            md: "400px",
+            md: "390px",
           },
           color: "#808080",
           textAlign: {
@@ -72,11 +72,12 @@ const Explore = () => {
             xs: "5%",
             sm: "0%",
             md: "0%",
-          }
+          },
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt.
+        By creating an NFT for a piece of jewelry, the owner can provide a
+        secure and transparent way to prove that they are the rightful owner and
+        that the jewelry is authentic.
       </Typography>
       <Box
         sx={{

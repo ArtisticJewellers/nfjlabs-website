@@ -11,25 +11,25 @@ const NFJFeatures = () => {
     {
       feature: "Traceability",
       detail:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "When an NFT is created for a piece of jewellry, it is recorded on a blockchain This creates a permanent and unchangeable record of the jewellry's ownership history and transaction history.",
       image: traceability,
     },
     {
       feature: "Transparency",
       detail:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "NFTs can also be used to provide transparency around the ethical and sustainable practices used in the creation of the jewellery. By recording the materials used and production methods ",
       image: transparency,
     },
     {
       feature: "Digitally Wearable",
       detail:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "Allows buyers to try on the jewellery in a virtual environment before making a purchase. This can help them to visualise how the jewellery will look and feel, and make a more informed purchasing decision ",
       image: digiWearable,
     },
     {
       feature: "Security",
       detail:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+        "Owner of the jewellery to control access to the NFT and the associated digital assets. This can prevent unauthorised access and ensure that the owner has full control over the NFT and the associated digital assets",
       image: security,
     },
   ];
@@ -37,7 +37,7 @@ const NFJFeatures = () => {
   const Feature = ({ feature, detail, image }) => {
     return (
       <>
-        <Box sx={{ width: "50%", marginBottom: "40px", }}>
+        <Box sx={{ width: "50%", marginBottom: "40px" }}>
           <Centered>
             <div>
               <Box
@@ -77,14 +77,14 @@ const NFJFeatures = () => {
                 sx={{
                   fontWeight: 400,
                   fontSize: {
-                    xs: "12px",
-                    sm: "17px",
-                    md: "17px",
+                    xs: "10px",
+                    sm: "12px",
+                    md: "15px",
                   },
                   width: {
                     xs: "135px",
-                    sm: "255px",
-                    md: "255px",
+                    sm: "240px",
+                    md: "240px",
                   },
                   color: "#808080",
                 }}
