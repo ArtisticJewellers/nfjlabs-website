@@ -16,7 +16,7 @@ const Web = () => {
         }}
       >
         <Trending web />
-        <img style={{ borderRadius: "50px" }} height="350px" src={coin} />
+        <img style={{ borderRadius: "50px" }} height="300px" src={coin} />
         <ProductInfo />
       </Box>
     </>

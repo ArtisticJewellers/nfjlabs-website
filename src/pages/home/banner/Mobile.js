@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import React from "react";
 import Trending from "./Trending";
 import coin from "../../../assets/homePage/trending/coin.gif";
-import ProductInfo from "./ProductInfo";
 
 const Mobile = () => {
   return (
@@ -22,7 +21,7 @@ const Mobile = () => {
             marginTop: "10px",
             marginBottom: "20px",
           }}
-          height="350px"
+          height="250px"
           src={coin}
         />
         <Trending />
