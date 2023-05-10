@@ -7,13 +7,12 @@ const ProductInfo = () => {
     <>
       <Box>
         <Typography fontWeight="500" variant="h4">
-          Product Name
+          Silver coin
         </Typography>
         <Typography width="300px" marginTop="20px" marginBottom="20px">
-          Our lion-and-sun jewelry combines the strength and courage of the lion
-          with the vitality and energy of the sun to create a truly
-          one-of-a-kind piece. Crafted with care and precision, this jewelry is
-          a true work of art.
+          NFT backed QR coded Silver coins ensuring transparency, traceability
+          and authenticity where NFT serves as a data repository and digital
+          certification and collectables.
         </Typography>
         <OutArrowBtn label="Marketplace" />
       </Box>
