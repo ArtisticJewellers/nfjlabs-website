@@ -11,6 +11,8 @@ const Collaborations = () => {
   const collaborators = [
     { name: "Alessio Boschi", image: alessio },
     { name: "Orient Pearls", image: orient },
+    { name: "Alessio Boschi", image: alessio },
+    { name: "Orient Pearls", image: orient },
   ];
   return (
     <>

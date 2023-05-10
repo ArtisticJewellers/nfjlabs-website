@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 
 import backgroundImage from "../../../assets/homePage/collaborations/mobileBackground.png";
+import Carousel from "../../../components/common/Carousel.js";
 
 const Mobile = ({ collaborators }) => {
   const DisplayCollab = ({ name, image }) => {
@@ -14,7 +15,8 @@ const Mobile = ({ collaborators }) => {
             backgroundPosition: "center",
             backgroundSize: "cover",
             borderRadius: "10px",
-            paddingY:2
+            paddingY: 2,
+            marginX: 1
           }}
         >
           <Box
@@ -35,6 +37,7 @@ const Mobile = ({ collaborators }) => {
                 fontWeight: 700,
                 fontSize: { xs: "15px", sm: "20px", md: "20px" },
                 color: "#84592C",
+
               }}
             >
               {name}
@@ -47,17 +50,21 @@ const Mobile = ({ collaborators }) => {
 
   return (
     <>
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-evenly",
-        }}
-      >
-        {collaborators.map((collaborator) => (
-          <DisplayCollab {...collaborator} />
-        ))}
+      <Box sx={{ width: "100%" }}>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+          }}
+        >
+        <Carousel slidesToShow={2}>
+          {collaborators.map((collaborator) => (
+            <DisplayCollab {...collaborator} />
+          ))}
+        </Carousel>
+        </Box>
       </Box>
     </>
   );

@@ -3,9 +3,9 @@ import React, { useEffect } from "react";
 import Centered from "../../../components/common/Centered";
 
 import backgroundImage from "../../../assets/homePage/collaborations/webBackground.png";
+import Carousel from "../../../components/common/Carousel.js";
 
 const Web = ({ collaborators }) => {
-
   const DisplayCollab = ({ name, image }) => {
     return (
       <>
@@ -30,7 +30,6 @@ const Web = ({ collaborators }) => {
 
   return (
     <Centered>
-
       <Box
         sx={{
           backgroundImage: `url(${backgroundImage})`,
@@ -44,9 +43,11 @@ const Web = ({ collaborators }) => {
           justifyContent: "space-evenly",
         }}
       >
-        {collaborators.map((collaborator) => (
-          <DisplayCollab {...collaborator} />
-        ))}
+        <Carousel slidesToShow={2}>
+          {collaborators.map((collaborator) => (
+            <DisplayCollab {...collaborator} />
+          ))}
+        </Carousel>
       </Box>
     </Centered>
   );

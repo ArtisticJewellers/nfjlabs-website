@@ -7,12 +7,11 @@ import goldenstan from "../../../assets/homePage/trending/Goldenstan.gif";
 import qajar from "../../../assets/homePage/trending/qajar.gif";
 import lion from "../../../assets/homePage/trending/lion.gif";
 
-
 const DisplayGif = ({ web, src }) => {
   return (
     <>
       <img
-        style={{ borderRadius: "10px", background:"#ffff" }}
+        style={{ borderRadius: "10px", background: "#ffff" }}
         width={web ? "100px" : "80px"}
         src={src}
       />
