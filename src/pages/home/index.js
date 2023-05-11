@@ -8,6 +8,7 @@ import Collaborations from "./collaborations";
 import Partners from "./partners";
 import FAQ from "./faq";
 import Footer from "./footer";
+import Gallery from "./gallery";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Features />
       <Collaborations />
       <Partners />
+      <Gallery />
       <FAQ />
       <Footer />
     </>
