@@ -14,6 +14,7 @@ import i11 from "../../../assets/homePage/gallery/Rectangle 104.png";
 import { Container, Typography } from "@mui/material";
 import GridImage from "./GridImage";
 import Centered from "../../../components/common/Centered";
+import Headding from "../../../components/common/Headding";
 
 const Gallery = () => {
   const galleryItems = [
@@ -33,15 +34,7 @@ const Gallery = () => {
     <>
       <Container>
         <Centered>
-          <Typography
-            sx={{
-              fontWeight: 700,
-              fontSize: { xs: "25px", sm: "35px", md: "48px" },
-              marginY: { xs: "10px", sm: "20px", md: "20px" },
-            }}
-          >
-            Gallery
-          </Typography>
+        <Headding text="Gallery"/>
         </Centered>
 
         <GridImage galleryItems={galleryItems} />

@@ -6,6 +6,7 @@ import backgroundImage from "../../../assets/homePage/partners/background.png";
 import bitsCrunch from "../../../assets/homePage/partners/bitsCrunch.png";
 import unisot from "../../../assets/homePage/partners/unisot.png";
 import tdefi from "../../../assets/homePage/partners/tdefi.png";
+import Headding from "../../../components/common/Headding";
 
 const Partners = () => {
   const PartnersList = () => {
@@ -53,15 +54,7 @@ const Partners = () => {
   return (
     <>
       <Centered>
-        <Typography
-          sx={{
-            fontWeight: 700,
-            fontSize: { xs: "25px", sm: "35px", md: "48px" },
-            marginY: { xs: "10px", sm: "20px", md: "20px" },
-          }}
-        >
-          Partners
-        </Typography>
+       <Headding text="Partners"/>
         <PartnersList />
       </Centered>
     </>

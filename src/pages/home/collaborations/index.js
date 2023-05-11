@@ -6,6 +6,7 @@ import Mobile from "./Mobile";
 import alessio from "../../../assets/homePage/collaborations/alessio.png";
 import orient from "../../../assets/homePage/collaborations/orient.png";
 import Centered from "../../../components/common/Centered";
+import Headding from "../../../components/common/Headding";
 
 const Collaborations = () => {
   const collaborators = [
@@ -18,15 +19,7 @@ const Collaborations = () => {
     <>
       <Container sx={{ marginY: "30px" }}>
         <Centered>
-          <Typography
-            sx={{
-              fontWeight: 700,
-              fontSize: { xs: "25px", sm: "35px", md: "48px" },
-              marginY: { xs: "50px", sm: "20px", md: "20px" },
-            }}
-          >
-            Collaborations
-          </Typography>
+          <Headding text="Collaborations"/>
         </Centered>
         <Box
           sx={{
