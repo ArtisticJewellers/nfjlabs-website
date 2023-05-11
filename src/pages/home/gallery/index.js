@@ -15,6 +15,7 @@ import { Container, Typography } from "@mui/material";
 import GridImage from "./GridImage";
 import Centered from "../../../components/common/Centered";
 import Headding from "../../../components/common/Headding";
+import Spacer from "../../../components/common/Spacer";
 
 const Gallery = () => {
   const galleryItems = [
@@ -32,6 +33,7 @@ const Gallery = () => {
   ];
   return (
     <>
+    <Spacer size={50}/>
       <Container>
         <Centered>
         <Headding text="Gallery"/>

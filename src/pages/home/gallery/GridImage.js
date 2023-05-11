@@ -3,17 +3,30 @@ import React from "react";
 
 const GridImage = ({ galleryItems }) => {
   return (
-    <Box sx={{ width: "100%"}}>
-      <ImageList variant="woven" cols={6} gap={10}>
+    <Box sx={{ width: "100%", height: "150%" }}>
+      <ImageList sx={{ overflow: "visible" }} variant="woven" cols={6} gap={20}>
         {galleryItems.map((item) => (
           <ImageListItem key={item.img}>
-            <img
-            style={{borderRadius:"10px"}}
-              src={`${item.img}?w=600&fit=contain&auto=format`}
-              srcSet={`${item.img}?w=600&fit=contain&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
+            <Box
+              sx={{
+                width: "100%",
+                transition: "transform 0.5s",
+                "&:hover": {
+                  transform: "scale(1.1)",
+                },
+              }}
+            >
+              <img
+                width="100%"
+                style={{
+                  borderRadius: "10px",
+                }}
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </Box>
           </ImageListItem>
         ))}
       </ImageList>
