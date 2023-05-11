@@ -1,16 +1,27 @@
 import React from "react";
 //images
-import i1 from "../../../assets/homePage/gallery/Rectangle 94.png";
-import i2 from "../../../assets/homePage/gallery/Rectangle 95.png";
-import i3 from "../../../assets/homePage/gallery/Rectangle 96.png";
-import i4 from "../../../assets/homePage/gallery/Rectangle 97.png";
-import i5 from "../../../assets/homePage/gallery/Rectangle 98.png";
-import i6 from "../../../assets/homePage/gallery/Rectangle 99.png";
-import i7 from "../../../assets/homePage/gallery/Rectangle 100.png";
-import i8 from "../../../assets/homePage/gallery/Rectangle 101.png";
-import i9 from "../../../assets/homePage/gallery/Rectangle 102.png";
-import i10 from "../../../assets/homePage/gallery/Rectangle 103.png";
-import i11 from "../../../assets/homePage/gallery/Rectangle 104.png";
+// import i1 from "../../../assets/homePage/gallery/Rectangle 94.png";
+// import i2 from "../../../assets/homePage/gallery/Rectangle 95.png";
+// import i3 from "../../../assets/homePage/gallery/Rectangle 96.png";
+// import i4 from "../../../assets/homePage/gallery/Rectangle 97.png";
+// import i5 from "../../../assets/homePage/gallery/Rectangle 98.png";
+// import i6 from "../../../assets/homePage/gallery/Rectangle 99.png";
+// import i7 from "../../../assets/homePage/gallery/Rectangle 100.png";
+// import i8 from "../../../assets/homePage/gallery/Rectangle 101.png";
+// import i9 from "../../../assets/homePage/gallery/Rectangle 102.png";
+// import i10 from "../../../assets/homePage/gallery/Rectangle 103.png";
+// import i11 from "../../../assets/homePage/gallery/Rectangle 104.png";
+
+import i1 from "../../../assets/homePage/gallery/NFJ Image 1.jpg";
+import i2 from "../../../assets/homePage/gallery/NFJ Image 2.jpg";
+import i3 from "../../../assets/homePage/gallery/NFJ Image 3.jpg";
+import i4 from "../../../assets/homePage/gallery/NFJ Image 4.jpg";
+import i5 from "../../../assets/homePage/gallery/NFJ IMage 5.jpg";
+import i6 from "../../../assets/homePage/gallery/NFJ IMage 6.jpg";
+import i7 from "../../../assets/homePage/gallery/NFJ Image 7.jpg";
+import i8 from "../../../assets/homePage/gallery/NFJ Image 8.jpg";
+import i9 from "../../../assets/homePage/gallery/NFJ IMage 9.jpg";
+import i10 from "../../../assets/homePage/gallery/NFJ Image 10.jpg";
 import { Container, Typography } from "@mui/material";
 import GridImage from "./GridImage";
 import Centered from "../../../components/common/Centered";
@@ -29,7 +40,8 @@ const Gallery = () => {
     { img: i8, title: "artist" },
     { img: i9, title: "artist" },
     { img: i10, title: "artist" },
-    { img: i11, title: "artist" },
+    { img: i1, title: "artist" }
+    // { img: i11, title: "artist" },
   ];
   return (
     <>

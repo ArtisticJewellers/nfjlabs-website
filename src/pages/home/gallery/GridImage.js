@@ -17,10 +17,8 @@ const GridImage = ({ galleryItems }) => {
               }}
             >
               <img
+              style={{borderRadius:"10px"}}
                 width="100%"
-                style={{
-                  borderRadius: "10px",
-                }}
                 src={`${item.img}`}
                 srcSet={`${item.img}`}
                 alt={item.title}
