@@ -1,10 +1,17 @@
 import { Box, ImageList, ImageListItem } from "@mui/material";
 import React from "react";
+import getScreenSize from "../../../helpers/getScreenSize";
 
 const GridImage = ({ galleryItems }) => {
+  const screenSize = getScreenSize();
   return (
     <Box sx={{ width: "100%", height: "150%" }}>
-      <ImageList sx={{ overflow: "visible" }} variant="woven" cols={6} gap={20}>
+      <ImageList
+        sx={{ overflow: "visible" }}
+        variant="woven"
+        cols={6}
+        gap={screenSize === "xs" ? 5 : 20}
+      >
         {galleryItems.map((item) => (
           <ImageListItem key={item.img}>
             <Box
@@ -17,7 +24,7 @@ const GridImage = ({ galleryItems }) => {
               }}
             >
               <img
-              style={{borderRadius:"10px"}}
+                style={{ borderRadius: "10px" }}
                 width="100%"
                 src={`${item.img}`}
                 srcSet={`${item.img}`}
