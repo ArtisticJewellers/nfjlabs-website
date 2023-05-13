@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import AccordionContent from "./AccordionContent";
 import { Box, Container, Typography } from "@mui/material";
 import Centered from "../../../components/common/Centered";
 import backgroundImage from "../../../assets/homePage/Star.png";
-import { faqs } from "../Constants";
+import RadioButtons from "../../../components/common/RadioButtons";
+import faqs from "./faqData";
 
 const FAQ = () => {
+  const [faqType, setFaqType] = useState(0);
+
+  const onQuestionTypeChange = (type) => {
+    setFaqType(type);
+  };
   const DisplayAnswer = ({ answer }) => {
     return (
       <Typography
@@ -18,6 +24,42 @@ const FAQ = () => {
       >
         {answer}
       </Typography>
+    );
+  };
+
+  const AboutNfj = () => {
+    return (
+      <>
+        {faqs.aboutNfj.map((faq) => (
+          <AccordionContent summary={faq.question}>
+            <DisplayAnswer answer={faq.answer} />
+          </AccordionContent>
+        ))}
+      </>
+    );
+  };
+
+  const Benefits = () => {
+    return (
+      <>
+        {faqs.benefits.map((faq) => (
+          <AccordionContent summary={faq.question}>
+            <DisplayAnswer answer={faq.answer} />
+          </AccordionContent>
+        ))}
+      </>
+    );
+  };
+
+  const Investment = () => {
+    return (
+      <>
+        {faqs.investment.map((faq) => (
+          <AccordionContent summary={faq.question}>
+            <DisplayAnswer answer={faq.answer} />
+          </AccordionContent>
+        ))}
+      </>
     );
   };
 
@@ -44,11 +86,18 @@ const FAQ = () => {
               FAQs
             </Typography>
           </Centered>
-          {faqs.map((faq) => (
-            <AccordionContent summary={faq.question}>
-              <DisplayAnswer answer={faq.answer} />
-            </AccordionContent>
-          ))}
+          <RadioButtons
+            buttons={["About NFJ", "Benefits", "Investment"]}
+            onChange={onQuestionTypeChange}
+            initialActiveBtn={1}
+          />
+          {faqType === 0 ? (
+            <AboutNfj />
+          ) : faqType === 1 ? (
+            <Benefits />
+          ) : (
+            <Investment />
+          )}
         </Box>
       </Container>
     </>
