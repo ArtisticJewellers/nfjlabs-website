@@ -2,11 +2,12 @@ import { CallMade, SouthEast } from "@mui/icons-material";
 import { Container, Tab, Tabs } from "@mui/material";
 import React, { useState } from "react";
 
-const CategoryTabs = () => {
+const CategoryTabs = ({onChange}) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    onChange(newValue)
   };
 
   const tabStyle = {

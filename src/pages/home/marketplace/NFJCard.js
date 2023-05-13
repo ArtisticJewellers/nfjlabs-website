@@ -1,6 +1,7 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import dolce from "../../../assets/homePage/trending/dolce.gif";
+import Centered from "../../../components/common/Centered";
 
 const NFJCard = ({ name, gif, type, value }) => {
   function truncateString(str, maxLength) {
@@ -10,10 +11,16 @@ const NFJCard = ({ name, gif, type, value }) => {
       return str;
     }
   }
+
+  const isVideo = gif.endsWith(".mp4");
   return (
     <Box
       sx={{
-        border: {xs:"2px solid #F4E1B6", sm:"4px solid #F4E1B6", md:"4px solid #F4E1B6"},
+        border: {
+          xs: "2px solid #F4E1B6",
+          sm: "4px solid #F4E1B6",
+          md: "4px solid #F4E1B6",
+        },
         borderRadius: "12px",
         width: { xs: "45%", sm: "200px", md: "272px" },
         height: { xs: "100%", sm: "280px", md: "357px" },
@@ -21,9 +28,18 @@ const NFJCard = ({ name, gif, type, value }) => {
         margin: "5px",
       }}
     >
-      <Box sx={{ width: { xs: "95%", sm: "200px", md: "272px" } }}>
-        <img width="100%" src={gif} alt="NFT" />
-      </Box>
+      <Centered>
+        <Box width="100%">
+          {isVideo ? (
+            <video width="100%" autoPlay muted loop>
+              <source src={gif} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <img width="100%" src={gif} alt="NFT" />
+          )}
+        </Box>
+      </Centered>
 
       <Box
         sx={{
@@ -66,7 +82,7 @@ const NFJCard = ({ name, gif, type, value }) => {
           alignItems: "center",
           justifyContent: "space-between",
           px: 2,
-          mb:{ xs: 2, sm: 0, md: 0 }
+          mb: { xs: 2, sm: 0, md: 0 },
         }}
       >
         <Typography

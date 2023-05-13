@@ -1,25 +1,30 @@
 import dolce from "../../../../assets/homePage/trending/dolce.gif";
 import goldenstan from "../../../../assets/homePage/trending/Goldenstan.gif";
-import lion from "../../../../assets/homePage/trending/";
+import lion from "../../../../assets/homePage/trending/lion.gif";
 import qajar from "../../../../assets/homePage/trending/qajar.gif";
 
-const jewellery = [
+import emerald from "../../../../assets/homePage/marketplace/gems/emerald.mp4";
+import opal from "../../../../assets/homePage/marketplace/gems/opal.mp4";
+import ruby from "../../../../assets/homePage/marketplace/gems/ruby.mp4";
+import saphire from "../../../../assets/homePage/marketplace/gems/saphire.mp4";
+
+import silverCoin from "../../../../assets/homePage/trending/coin.gif"
+
+
+export const jewellery = [
   { name: "DOLCE VITA RING", gif: dolce, type: "RING", value: "1,790" },
   { name: "SUN LION", gif: lion, type: "RING", value: "1,990" },
   { name: "GOLDENSTAN", gif: goldenstan, type: "RING", value: "2,790" },
   { name: "QUAJAR CUFFINKS", gif: qajar, type: "RING", value: "1,690" },
 ];
 
-const gems = [
-  { name: "DOLCE VITA RING", gif: dolce, type: "RING", value: "1,790" },
-  { name: "SUN LION", gif: lion, type: "RING", value: "1,990" },
-  { name: "GOLDENSTAN", gif: goldenstan, type: "RING", value: "2,790" },
-  { name: "QUAJAR CUFFINKS", gif: qajar, type: "RING", value: "1,690" },
+export const gems = [
+  { name: "EMERALD", gif: emerald, type: "STONE", value: "1,790" },
+  { name: "OPAL", gif: opal, type: "STONE", value: "1,990" },
+  { name: "RUBY", gif: ruby, type: "STONE", value: "2,790" },
+  { name: "SAPPHIRE", gif: saphire, type: "STONE", value: "1,690" },
 ];
 
-const coins = [
-  { name: "DOLCE VITA RING", gif: dolce, type: "RING", value: "1,790" },
-  { name: "SUN LION", gif: lion, type: "RING", value: "1,990" },
-  { name: "GOLDENSTAN", gif: goldenstan, type: "RING", value: "2,790" },
-  { name: "QUAJAR CUFFINKS", gif: qajar, type: "RING", value: "1,690" },
+export const coins = [
+  { name: "SILVER COIN", gif: silverCoin, type: "QR CODED", value: "1,790" },
 ];
