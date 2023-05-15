@@ -3,13 +3,33 @@ import Text from "./Text";
 import { Box } from "@mui/material";
 
 const Socials = () => {
+  const redirect = (link) => {
+    window.location.href = link;
+  };
   return (
     <div>
       <Text type1 text="Socials" />
-      <Text type2 text="Facebook" />
-      <Text type2 text="Linkedin" />
-      <Text type2 text="Instagram" />
-      <Text type2 text="Twitter" />
+      <Text
+        type2
+        text="Linkedin"
+        onClick={() => {
+          redirect("https://www.linkedin.com/company/nfj-labs/");
+        }}
+      />
+      <Text
+        type2
+        text="Instagram"
+        onClick={() => {
+          redirect("https://www.instagram.com/nfjlabs/");
+        }}
+      />
+      <Text
+        type2
+        text="Twitter"
+        onClick={() => {
+          "https://twitter.com/nfjlabs";
+        }}
+      />
     </div>
   );
 };

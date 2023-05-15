@@ -10,10 +10,10 @@ const Blog = () => {
     <>
       <Box sx={{ mt: 10 }} />
       <Slider />
-      <TopStories />
       <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
         <AditionalStoriesLayout />
       </Box>
+      <TopStories />
       <Subscribe />
     </>
   );

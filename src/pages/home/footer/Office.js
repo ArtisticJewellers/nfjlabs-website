@@ -34,7 +34,7 @@ const Office = () => {
         />
       </Box>
         <Box marginTop="100px" />
-      <Text type4 text="© 2023 NFJ Media. All rights reserved. " />
+      <Text type4 text="© 2023 NFJ Labs. All rights reserved. " />
     </Box>
   );
 };

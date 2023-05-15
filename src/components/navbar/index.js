@@ -40,10 +40,6 @@ function NavBar(props) {
     window.location.href = link;
   };
 
-  useEffect(() => {
-    console.log("the window object in navbar-------->", window);
-  }, []);
-
   const LstItem = ({ onClick, item }) => {
     return (
       <>
