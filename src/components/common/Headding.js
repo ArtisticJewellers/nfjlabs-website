@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
-const Headding = ({ text }) => {
+const Headding = ({ text  }) => {
   return (
     <Typography
       sx={{
