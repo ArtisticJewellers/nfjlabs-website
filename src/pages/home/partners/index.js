@@ -1,14 +1,16 @@
 import React from "react";
 import Centered from "../../../components/common/Centered";
 import { Box, Typography } from "@mui/material";
+import Headding from "../../../components/common/Headding";
 
 import backgroundImage from "../../../assets/homePage/partners/background.png";
 import bitsCrunch from "../../../assets/homePage/partners/bitsCrunch.png";
 import unisot from "../../../assets/homePage/partners/unisot.png";
 import tdefi from "../../../assets/homePage/partners/tdefi.png";
-import Headding from "../../../components/common/Headding";
+import quill from "../../../assets/homePage/partners/quill.png";
 
 const Partners = () => {
+  const partners = [bitsCrunch, unisot, tdefi, quill];
   const PartnersList = () => {
     return (
       <Box
@@ -23,7 +25,15 @@ const Partners = () => {
           justifyContent: "center",
         }}
       >
-        <Box
+        {partners.map((partner)=>(        <Box
+          sx={{
+            mx: { xs: 2, sm: 5, md: 5 },
+            width: { xs: "100px", sm: "150px", md: "200px" },
+          }}
+        >
+          <img width="100%" src={partner} />
+        </Box>))}
+        {/* <Box
           sx={{
             mx: { xs: 2, sm: 5, md: 5 },
             width: { xs: "100px", sm: "150px", md: "200px" },
@@ -47,6 +57,14 @@ const Partners = () => {
         >
           <img width="100%" src={tdefi} />
         </Box>
+        <Box
+          sx={{
+            mx: { xs: 2, sm: 5, md: 5 },
+            width: { xs: "100px", sm: "150px", md: "200px" },
+          }}
+        >
+          <img width="100%" src={quill} />
+        </Box> */}
       </Box>
     );
   };
@@ -54,7 +72,7 @@ const Partners = () => {
   return (
     <>
       <Centered>
-       <Headding text="Partners"/>
+        <Headding text="Partners" />
         <PartnersList />
       </Centered>
     </>
