@@ -19,6 +19,7 @@ import GradientText from "../common/GradientText";
 import Centered from "../common/Centered";
 import Row from "../common/Row";
 import { links } from "../../pages/home/Constants";
+import { useEffect } from "react";
 
 const drawerWidth = 240;
 
@@ -27,7 +28,7 @@ function NavBar(props) {
 
   const leftNavRoutes = ["", "about", "blog"];
 
-  const { window } = props;
+  const { windowObj } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const navigate = useNavigate();
 
@@ -38,6 +39,10 @@ function NavBar(props) {
   const redirect = (link) => {
     window.location.href = link;
   };
+
+  useEffect(() => {
+    console.log("the window object in navbar-------->", window);
+  }, []);
 
   const LstItem = ({ onClick, item }) => {
     return (
@@ -63,14 +68,24 @@ function NavBar(props) {
             }}
           />
         ))}
-        <LstItem item="Marketplace" onClick={() => {}} />
-        <LstItem item="Metaverse" onClick={() => {}} />
+        <LstItem
+          item="Marketplace"
+          onClick={() => {
+            redirect(links.marketplace);
+          }}
+        />
+        <LstItem
+          item="Metaverse"
+          onClick={() => {
+            redirect(links.metaverse);
+          }}
+        />
       </List>
     </Box>
   );
 
   const container =
-    window !== undefined ? () => window().document.body : undefined;
+    windowObj !== undefined ? () => windowObj().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -141,7 +156,7 @@ function NavBar(props) {
 
               {/* RIGHT NAV BUTTONS  */}
               <Row sx={{ width: "36%", justifyContent: "center" }}>
-                <Box flexGrow={1} />
+                <Box flexGrow={20} />
                 <Button
                   sx={{ color: "black", textDecoration: "none" }}
                   component={Link}
@@ -149,6 +164,7 @@ function NavBar(props) {
                 >
                   Marketplace
                 </Button>
+                <Box flexGrow={1} />
                 <Button
                   sx={{ color: "black", textDecoration: "none" }}
                   component={Link}

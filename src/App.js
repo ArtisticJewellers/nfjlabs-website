@@ -6,8 +6,14 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import Blog from "./pages/blog";
 import BlogDetails from "./pages/blogDetails";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    console.log("the windo object is------->", window);
+    // window.location.href = "rgregregerre";
+  }, []);
+
   return (
     <>
       <nav>
