@@ -68,13 +68,13 @@ const Numbers = () => {
           ))}
         </Box>
         <Typography
-          textAlign="center"
           fontWeight="500"
           color="#B5B5B5"
           sx={{
+            textAlign: { xs: "center", sm: "center", md: "right" },
             fontSize: { xs: "25px", sm: "40px", md: "50px" },
             width: { xs: "100%", sm: "100%", md: "50%" },
-            marginTop:{xs: "30px"}
+            marginTop: { xs: "30px" },
           }}
         >
           Meet Our Artists

@@ -25,46 +25,16 @@ const Partners = () => {
           justifyContent: "center",
         }}
       >
-        {partners.map((partner)=>(        <Box
-          sx={{
-            mx: { xs: 2, sm: 5, md: 5 },
-            width: { xs: "100px", sm: "150px", md: "200px" },
-          }}
-        >
-          <img width="100%" src={partner} />
-        </Box>))}
-        {/* <Box
-          sx={{
-            mx: { xs: 2, sm: 5, md: 5 },
-            width: { xs: "100px", sm: "150px", md: "200px" },
-          }}
-        >
-          <img width="100%" src={bitsCrunch} />
-        </Box>
-        <Box
-          sx={{
-            mx: { xs: 2, sm: 5, md: 5 },
-            width: { xs: "100px", sm: "150px", md: "200px" },
-          }}
-        >
-          <img width="100%" src={unisot} />
-        </Box>
-        <Box
-          sx={{
-            mx: { xs: 2, sm: 5, md: 5 },
-            width: { xs: "100px", sm: "150px", md: "200px" },
-          }}
-        >
-          <img width="100%" src={tdefi} />
-        </Box>
-        <Box
-          sx={{
-            mx: { xs: 2, sm: 5, md: 5 },
-            width: { xs: "100px", sm: "150px", md: "200px" },
-          }}
-        >
-          <img width="100%" src={quill} />
-        </Box> */}
+        {partners.map((partner) => (
+          <Box
+            sx={{
+              mx: { xs: 2, sm: 5, md: 5 },
+              width: { xs: "100px", sm: "150px", md: "200px" },
+            }}
+          >
+            <img width="100%" src={partner} />
+          </Box>
+        ))}
       </Box>
     );
   };
