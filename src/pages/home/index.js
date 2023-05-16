@@ -16,10 +16,10 @@ const Home = () => {
     <>
       <Banner />
       <Stats />
-      <Artists />
+      <Features />
       <Marketplace />
       <Metaverse />
-      <Features />
+      <Artists />
       <Collaborations />
       <Partners />
       <Gallery />

@@ -20,7 +20,7 @@ const Features = () => {
           backgroundPosition:{ xs: "top left", sm: "top left", md: "bottom left" },
           backgroundSize: "35%",
           //   background:"red"
-          marginTop: 0, // Set margin top to 0
+          marginTop: 10, // Set margin top to 0
           paddingTop: 0, // Set padding top to 0
         }}
       >
