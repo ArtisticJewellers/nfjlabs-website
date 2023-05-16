@@ -9,11 +9,13 @@ import Partners from "./partners";
 import FAQ from "./faq";
 import Footer from "./footer";
 import Gallery from "./gallery";
+import Stats from "./stats";
 
 const Home = () => {
   return (
     <>
       <Banner />
+      <Stats />
       <Artists />
       <Marketplace />
       <Metaverse />
