@@ -31,9 +31,11 @@ const FAQ = () => {
     return (
       <>
         {faqs.aboutNfj.map((faq) => (
-          <AccordionContent summary={faq.question}>
-            <DisplayAnswer answer={faq.answer} />
-          </AccordionContent>
+          <Box marginY={1}>
+            <AccordionContent summary={faq.question}>
+              <DisplayAnswer answer={faq.answer} />
+            </AccordionContent>
+          </Box>
         ))}
       </>
     );
@@ -43,9 +45,11 @@ const FAQ = () => {
     return (
       <>
         {faqs.benefits.map((faq) => (
-          <AccordionContent summary={faq.question}>
-            <DisplayAnswer answer={faq.answer} />
-          </AccordionContent>
+          <Box marginY={1}>
+            <AccordionContent summary={faq.question}>
+              <DisplayAnswer answer={faq.answer} />
+            </AccordionContent>
+          </Box>
         ))}
       </>
     );
@@ -55,9 +59,11 @@ const FAQ = () => {
     return (
       <>
         {faqs.investment.map((faq) => (
-          <AccordionContent summary={faq.question}>
-            <DisplayAnswer answer={faq.answer} />
-          </AccordionContent>
+          <Box marginY={1}>
+            <AccordionContent summary={faq.question}>
+              <DisplayAnswer answer={faq.answer} />
+            </AccordionContent>
+          </Box>
         ))}
       </>
     );
