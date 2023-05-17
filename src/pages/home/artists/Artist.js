@@ -1,10 +1,12 @@
 import { Box, Button, Container, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import OutArrowBtn from "../../../components/common/OutArrowBtn";
 import artist from "../../../assets/homePage/artists/artist.png";
 import Carousel from "../../../components/common/Carousel.js";
+import JoinUsModal from "./JoinUsModal";
 
 const Artist = () => {
+  const [openModal, setOpenModal] = useState(false);
   const ArtistInfo = () => {
     return (
       <>
@@ -64,7 +66,6 @@ const Artist = () => {
   const ArtistContainer = () => {
     return (
       <>
-      
         <Box
           sx={{
             marginY: "35px",
@@ -96,7 +97,12 @@ const Artist = () => {
           }}
         >
           <Box sx={{ alignSelf: "end" }}>
-            <OutArrowBtn label="Join Us" />
+            <OutArrowBtn
+              onClick={() => {
+                setOpenModal(true);
+              }}
+              label="Join Us"
+            />
           </Box>
           <Box width="100%">
             <Carousel center>
@@ -106,6 +112,7 @@ const Artist = () => {
           </Box>
         </Box>
       </Container>
+      <JoinUsModal open={openModal} setOpen={setOpenModal} />
     </>
   );
 };

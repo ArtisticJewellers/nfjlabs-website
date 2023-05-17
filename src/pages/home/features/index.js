@@ -17,9 +17,12 @@ const Features = () => {
           flexWrap: "wrap",
           backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",
-          backgroundPosition:{ xs: "top left", sm: "top left", md: "bottom left" },
+          backgroundPosition: {
+            xs: "top left",
+            sm: "top left",
+            md: "bottom left",
+          },
           backgroundSize: "35%",
-          //   background:"red"
           marginTop: 10, // Set margin top to 0
           paddingTop: 0, // Set padding top to 0
         }}

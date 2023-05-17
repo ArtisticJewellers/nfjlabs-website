@@ -22,7 +22,7 @@ const RadioButtons = ({ buttons, initialActiveBtn, onChange }) => {
             background: activeBtn === index ? "#F0A72C" : "#ffff",
             border: "1px solid #F0A72C",
             color: activeBtn === index ? "#ffff" : "black",
-            marginX: 1,
+            marginRight:2,
             fontSize: { xs: "10px", sm: "15px", md: "19px" },
             "&:hover": {
               color: "#fff",
