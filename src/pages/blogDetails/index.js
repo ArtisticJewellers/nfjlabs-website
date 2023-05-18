@@ -5,24 +5,13 @@ import img from "../../assets/blog/slider/slider1.png";
 import { Box } from "@mui/material";
 import B1 from "./blogs/b1";
 import TopStories from "../blog/topStories";
+import B2 from "./blogs/b2";
 
 const BlogDetails = () => {
-  const blogDetail = {
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit 1",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam. ",
-    bgImage: img,
-    writer: "Writer Name",
-  };
   return (
     <>
-      {/* <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
-        <Web blogDetail={blogDetail} />
-      </Box>
-      <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>
-        <Mobile blogDetail={blogDetail} />
-      </Box> */}
-      <B1 />
+      {/* <B1 /> */}
+      <B2 />
       <TopStories />
     </>
   );
