@@ -9,7 +9,10 @@ const Office = () => {
       <Text type1 text="Head Office" />
       <Text
         type2
-        text="Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565"
+        text="Wing 3
+        Bren Imperia
+        Harlur Main Road
+        Bengaluru 560102"
       />
       <Box marginTop="25px" />
       <Box sx={{ display: { xs: "none", sm: "block", md: "block" } }}>
@@ -33,7 +36,7 @@ const Office = () => {
           }}
         />
       </Box>
-        <Box marginTop="100px" />
+      <Box marginTop="100px" />
       <Text type4 text="© 2023 NFJ Labs. All rights reserved. " />
     </Box>
   );

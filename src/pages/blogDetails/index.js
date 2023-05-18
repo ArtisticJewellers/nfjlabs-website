@@ -3,6 +3,8 @@ import Web from "./Web";
 import Mobile from "./Mobile";
 import img from "../../assets/blog/slider/slider1.png";
 import { Box } from "@mui/material";
+import B1 from "./blogs/b1";
+import TopStories from "../blog/topStories";
 
 const BlogDetails = () => {
   const blogDetail = {
@@ -14,12 +16,14 @@ const BlogDetails = () => {
   };
   return (
     <>
-      <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
+      {/* <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
         <Web blogDetail={blogDetail} />
       </Box>
       <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>
         <Mobile blogDetail={blogDetail} />
-      </Box>
+      </Box> */}
+      <B1 />
+      <TopStories />
     </>
   );
 };
