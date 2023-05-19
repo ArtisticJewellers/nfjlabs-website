@@ -5,9 +5,9 @@ import blogImage from "../../../../assets/blog/blogs/b4.jpg";
 
 const B4 = () => {
   const bannerDetails = {
-    title: "The Future of Jewellery Manufacturing and the Role of Technology",
+    title: "Wearable NFTs — Everything There’s To Know About Them",
     description:
-      "Technology is changing the jewellery manufacturing industry at a rapid pace. The future of jewellery manufacturing will be all about using technology to create more efficient, cost-effective, innovative products.",
+      "The world of fashion and jewelry is undergoing a transformation with the introduction of wearable NFTs. NFTs, or Non-Fungible Tokens, have been making waves in the art and collectibles world, but now they're starting to make their way into the world of fashion and jewelry. This new trend is shaking up the traditional jewelry industry and offering a unique and exciting way to own and display wearable pieces.",
     bgImage: blogImage,
     writer: "Writer Name",
   };

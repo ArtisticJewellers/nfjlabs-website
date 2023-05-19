@@ -8,6 +8,7 @@ import TopStories from "../blog/topStories";
 import B2 from "./blogs/b2";
 import B3 from "./blogs/b3";
 import B4 from "./blogs/b4";
+import B5 from "./blogs/b5";
 
 const BlogDetails = () => {
   return (
@@ -15,7 +16,8 @@ const BlogDetails = () => {
       {/* <B1 /> */}
       {/* <B2 /> */}
       {/* <B3 /> */}
-      <B4 />
+      {/* <B4 /> */}
+      <B5 />
       <TopStories />
     </>
   );
