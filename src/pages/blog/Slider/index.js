@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import slider1Bg from "../../../assets/blog/slider/slider1.png";
-import slider2Bg from "../../../assets/blog/slider/slider2.png";
+import slider1Bg from "../../../assets/blog/blogs/b1.jpg";
+import slider2Bg from "../../../assets/blog/blogs/b2.jpg";
 import Carousel from "../../../components/common/Carousel.js.js";
 import Slide from "./slide";
 import { Box, Container, Typography } from "@mui/material";
@@ -29,7 +29,7 @@ const MobileCarousel = ({ slidesData }) => {
 
   return (
     <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>
-      <Carousel center >
+      <Carousel center>
         {slidesData.map((slide) => (
           <Slide slide={slide} />
         ))}
@@ -53,15 +53,15 @@ const MobileCarousel = ({ slidesData }) => {
 const Slider = () => {
   const slidesData = [
     {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit 1",
+      title: "How is Blockchain Shaping the Diamond Industry?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam. ",
+        "The diamond industry is often associated with opulence and luxury, but it is also notorious for its lack of transparency and accountability. In recent years, blockchain technology has emerged as a game-changer in this industry. Blockchain, which is essentially a decentralized digital ledger,  can help track the journey of a diamond from its origin to its final destination, ensuring authenticity, ethical sourcing, and transparency throughout the supply chain.",
       bgImage: slider1Bg,
     },
     {
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit 2",
+      title: "How Blockchain Technology is Changing the Jewellery Industry?",
       description:
-        "elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua ut enim ad minim veniam. ",
+        "Blockchain technology is changing the jewellery industry. It’s changing how we buy, sell and make jewellery. ",
       bgImage: slider2Bg,
     },
   ];

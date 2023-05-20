@@ -3,6 +3,7 @@ import Row from "../../../components/common/Row";
 import { Box, Divider, Typography } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 import Navigate from "../../../components/common/Navigate";
+import truncateString from "../../../helpers/truncateString";
 
 const StoryCard = ({ title, writer, views, image }) => {
   return (
@@ -10,7 +11,7 @@ const StoryCard = ({ title, writer, views, image }) => {
         <Navigate to="/blog/1">
         <img src={image} style={{ borderRadius: "5px" }} width="100%" />
         <Typography sx={{ fontWeight: 700, fontSize: "18px" }}>
-          {title}
+          {truncateString(title, 30)}
         </Typography>
         <Row sx={{ justifyContent: "start" }}>
           <Typography sx={{ fontSize: "13px", color: "#808080" }}>

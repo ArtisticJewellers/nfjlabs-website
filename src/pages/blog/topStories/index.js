@@ -12,41 +12,40 @@ import Mobile from "./Mobile";
 const TopStories = () => {
   const stories = [
     {
-      title: " Lorem ipsum dolor sit amet, consectetur. ",
+      title: "How is Blockchain Shaping the Diamond Industry?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
+        "The diamond industry is often associated with opulence and luxury, but it is also notorious for its lack of transparency and accountability. In recent years, blockchain technology has emerged as a game-changer in this industry.",
       writer: "writer Name",
       views: "2.5k",
       image: b1,
     },
     {
-      title: " Lorem ipsum dolor sit amet, consectetur. ",
+      title: "How Blockchain Technology is Changing the Jewellery Industry?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
-      writer: "writer Name",
+        "The blockchain is a digital ledger that records transactions between parties in a permanent way, allowing them to be tracked and verified. It’s this ability to track and verify transactions that makes it so useful for the jewellery industry.",
       views: "2.5k",
       image: b2,
     },
     {
-      title: " Lorem ipsum dolor sit amet, consectetur. ",
+      title: "The Future of Jewellery Manufacturing and the Role of Technology",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
+        "Technology is changing the jewellery manufacturing industry at a rapid pace. The future of jewellery manufacturing will be all about using technology to create more efficient, cost-effective, innovative products.",
       writer: "writer Name",
       views: "2.5k",
       image: b3,
     },
     {
-      title: " Lorem ipsum dolor sit amet, consectetur. ",
+      title: "Wearable NFTs — Everything There’s To Know About Them",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
+        "The world of fashion and jewelry is undergoing a transformation with the introduction of wearable NFTs. NFTs, or Non-Fungible Tokens, have been making waves in the art and collectibles world, but now they're starting to make their way into the world of fashion and jewelry.",
       writer: "writer Name",
       views: "2.5k",
       image: b4,
     },
     {
-      title: " Lorem ipsum dolor sit amet, consectetur. ",
+      title: "Can NFTs Work for Luxury Jewellery?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
+        "The most obvious place to start when considering the application of NFTs is luxury goods. Why? Because luxury goods are often characterised by their collectability, which lends itself well to the notion of scarcity and exclusivity.",
       writer: "writer Name",
       views: "2.5k",
       image: b5,

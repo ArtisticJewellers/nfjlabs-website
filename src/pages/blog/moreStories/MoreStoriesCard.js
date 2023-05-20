@@ -56,8 +56,8 @@ const MoreStoriesCard = ({
             src={image}
             style={{
               borderRadius: "5px",
-              objectPosition: "left", // Display the left half of the image
-              objectFit: "cover", // Disable resizing of the image
+              objectPosition: "left",
+              objectFit: "cover",
             }}
           />
         </Row>

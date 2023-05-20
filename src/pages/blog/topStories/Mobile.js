@@ -2,6 +2,7 @@ import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import Row from "../../../components/common/Row";
 import Navigate from "../../../components/common/Navigate";
+import truncateString from "../../../helpers/truncateString";
 
 const StoryCard = ({ title, description, writer, views, image }) => {
   return (
@@ -20,7 +21,7 @@ const StoryCard = ({ title, description, writer, views, image }) => {
                 marginY: 1,
               }}
             >
-              {description}
+              {truncateString(description, 200)}
             </Typography>
             <Row sx={{ marginY: 1 }}>
               <Typography sx={{ fontSize: "10px", fontWeight: 500 }}>
@@ -35,7 +36,11 @@ const StoryCard = ({ title, description, writer, views, image }) => {
             src={image}
             height="86px"
             width="86px"
-            style={{ borderRadius: "5%" }}
+            style={{
+              borderRadius: "5px",
+              objectPosition: "left",
+              objectFit: "cover",
+            }}
           />
         </Row>
         <Divider />
