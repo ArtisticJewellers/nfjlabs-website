@@ -3,6 +3,7 @@ import React from "react";
 import Row from "../../../components/common/Row";
 import Avatar from "../../../components/common/Avatar";
 import Spacer from "../../../components/common/Spacer";
+import truncateString from "../../../helpers/truncateString";
 
 const MoreStoriesCard = ({
   title,
@@ -35,7 +36,7 @@ const MoreStoriesCard = ({
                 marginY: 1,
               }}
             >
-              {description}
+              {truncateString(description,100)}
             </Typography>
             <Row sx={{ justifyContent: "start", marginY: 1 }}>
               <Typography
@@ -53,7 +54,11 @@ const MoreStoriesCard = ({
             width="160px"
             height="160px"
             src={image}
-            style={{ borderRadius: "5px" }}
+            style={{
+              borderRadius: "5px",
+              objectPosition: "left", // Display the left half of the image
+              objectFit: "cover", // Disable resizing of the image
+            }}
           />
         </Row>
       </Box>

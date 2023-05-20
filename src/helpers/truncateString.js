@@ -1,0 +1,9 @@
+function truncateString(str, maxLength) {
+  if (str.length > maxLength) {
+    return str.slice(0, maxLength - 3) + "...";
+  } else {
+    return str;
+  }
+}
+
+export default truncateString;

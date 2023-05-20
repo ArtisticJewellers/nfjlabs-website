@@ -9,35 +9,35 @@ import HighlightsStoryCard from "./HighlightsStoryCard";
 const Highlights = ({ blogDetail }) => {
   const trendingStories = [
     {
-      title: " Lorem ipsum dolor siamet, consectetur lor em dolo.",
+      title: "How is Blockchain Shaping the Diamond Industry?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
+        "The diamond industry is often associated with opulence and luxury, but it is also notorious for its lack of transparency and accountability. In recent years, blockchain technology has emerged as a game-changer in this industry. Blockchain, which is essentially a decentralized digital ledger,  can help track the journey of a diamond from its origin to its final destination, ensuring authenticity, ethical sourcing, and transparency throughout the supply chain.",
       timeAgo: "10 mins ago",
       views: "2.5k",
       image: b1,
     },
     {
-      title: " Lorem ipsum dolor siamet, consectetur lor em dolo.",
+      title: "How Blockchain Technology is Changing the Jewellery Industry?",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
+        "The blockchain is a digital ledger that records transactions between parties in a permanent way, allowing them to be tracked and verified. It’s this ability to track and verify transactions that makes it so useful for the jewellery industry.",
       timeAgo: "10 mins ago",
       readTime: 10,
       views: "2.5k",
       image: b2,
     },
     {
-      title: " Lorem ipsum dolor siamet, consectetur lor em dolo.",
+      title: "The Future of Jewellery Manufacturing and the Role of Technology",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
+        "Technology is changing the jewellery manufacturing industry at a rapid pace. The future of jewellery manufacturing will be all about using technology to create more efficient, cost-effective, innovative products.",
       timeAgo: "10 mins ago",
       readTime: 10,
       views: "2.5k",
       image: b3,
     },
     {
-      title: " Lorem ipsum dolor siamet, consectetur lor em dolo.",
+      title: "Wearable NFTs — Everything There’s To Know About Them",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
+        "The world of fashion and jewelry is undergoing a transformation with the introduction of wearable NFTs. NFTs, or Non-Fungible Tokens, have been making waves in the art and collectibles world, but now they're starting to make their way into the world of fashion and jewelry.",
       timeAgo: "10 mins ago",
       readTime: 10,
       views: "2.5k",
