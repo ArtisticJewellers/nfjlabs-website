@@ -19,7 +19,14 @@ const Body = () => {
         >
           <Highlights blogDetail />
         </Box>
-        <Headding text="How is Blockchain Shaping the Diamond Industry?" />
+        <Box
+          sx={{
+            display: { xs: "none", sm: "none", md: "block" },
+          }}
+        >
+          <Headding text="How is Blockchain Shaping the Diamond Industry?" />
+        </Box>
+
         <Para>
           <p>
             The diamond industry is often associated with opulence and luxury,

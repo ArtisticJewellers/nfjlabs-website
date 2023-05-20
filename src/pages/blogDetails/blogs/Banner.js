@@ -1,10 +1,13 @@
-import { Box, Container, IconButton } from "@mui/material";
+import { Box, Button, Container, Divider, IconButton, Typography } from "@mui/material";
 import React from "react";
 import BlogBanner from "../../../components/blogBanner";
 import { ArrowBack } from "@mui/icons-material";
+import Row from "../../../components/common/Row";
+import Avatar from "../../../components/common/Avatar";
+import Spacer from "../../../components/common/Spacer";
 
 const Banner = ({ bannerDetails }) => {
-
+  const { title, writer, bgImage, description } = bannerDetails;
   const Web = () => {
     return (
       <>
@@ -33,6 +36,34 @@ const Banner = ({ bannerDetails }) => {
             <ArrowBack color="secondary" />
           </IconButton>
         </Box>
+        <>
+        <Container>
+          <Typography sx={{ fontWeight: 600, fontSize: "20px" }}>
+            {title}
+          </Typography>
+          <Row sx={{ marginY: 2 }}>
+            <Row>
+              <Avatar text="AN" size={35} />
+              <Spacer row size={10} />
+              <Box>
+                <Typography
+                  sx={{ fontWeight: 600, fontSize: "10px", color: "#2E2E2E" }}
+                >
+                  {writer}
+                </Typography>
+                <Typography
+                  sx={{ fontWeight: 500, fontSize: "9px", color: "#808080" }}
+                >
+                  2 hours ago
+                </Typography>
+              </Box>
+            </Row>
+
+            <Button variant="contained">Subscribe</Button>
+          </Row>
+          <Divider />
+          </Container>
+        </>
       </>
     );
   };
