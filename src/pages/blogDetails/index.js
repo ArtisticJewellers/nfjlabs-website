@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Web from "./Web";
 import Mobile from "./Mobile";
 import img from "../../assets/blog/slider/slider1.png";
@@ -9,15 +9,19 @@ import B2 from "./blogs/b2";
 import B3 from "./blogs/b3";
 import B4 from "./blogs/b4";
 import B5 from "./blogs/b5";
+import { useParams } from "react-router-dom";
 
 const BlogDetails = () => {
+  const { id } = useParams();
+  const blogs = [B1, B2, B3, B4, B5];
+  let Blog = B1;
+  if (id <= blogs.length && id > 0) {
+    Blog = blogs[id - 1];
+  }
+
   return (
     <>
-      {/* <B1 /> */}
-      {/* <B2 /> */}
-      {/* <B3 /> */}
-      {/* <B4 /> */}
-      <B5 />
+      <Blog />
       <TopStories />
     </>
   );
