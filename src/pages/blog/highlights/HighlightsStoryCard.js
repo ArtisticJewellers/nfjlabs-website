@@ -12,7 +12,11 @@ const HighlightsStoryCard = ({ title, timeAgo, views, image }) => {
             src={image}
             height="72px"
             width="72px"
-            style={{ borderRadius: "5px" }}
+            style={{
+              borderRadius: "5px",
+              objectPosition: "left",
+              objectFit: "cover",
+            }}
           />
           <Box sx={{ width: "70%" }}>
             <Row>

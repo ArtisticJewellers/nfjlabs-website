@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import ts1 from "../../../assets/blog/trendingStories/ts1.png";
-import ts2 from "../../../assets/blog/trendingStories/ts2.png";
-import ts3 from "../../../assets/blog/trendingStories/ts3.png";
-import ts4 from "../../../assets/blog/trendingStories/ts4.png";
+import b1 from "../../../assets/blog/blogs/b1.jpg";
+import b2 from "../../../assets/blog/blogs/b2.jpg";
+import b3 from "../../../assets/blog/blogs/b3.jpg";
+import b4 from "../../../assets/blog/blogs/b4.jpg";
 import TrendingStoryCard from "./TrendingStoryCard";
 
 const Trending = () => {
@@ -14,7 +14,7 @@ const Trending = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
       timeAgo: "10 mins ago",
       views: "2.5k",
-      image: ts1,
+      image: b1,
     },
     {
       title: " Lorem ipsum dolor siamet, consectetur lor em dolo.",
@@ -23,7 +23,7 @@ const Trending = () => {
       timeAgo: "10 mins ago",
       readTime: 10,
       views: "2.5k",
-      image: ts2,
+      image: b2,
     },
     {
       title: " Lorem ipsum dolor siamet, consectetur lor em dolo.",
@@ -32,7 +32,7 @@ const Trending = () => {
       timeAgo: "10 mins ago",
       readTime: 10,
       views: "2.5k",
-      image: ts3,
+      image: b3,
     },
     {
       title: " Lorem ipsum dolor siamet, consectetur lor em dolo.",
@@ -41,12 +41,12 @@ const Trending = () => {
       timeAgo: "10 mins ago",
       readTime: 10,
       views: "2.5k",
-      image: ts4,
+      image: b4,
     },
   ];
   return (
     <>
-      <Typography sx={{ fontSize: "28px", fontWeight: 700, marginTop: 5 }}>
+      <Typography sx={{ fonbize: "28px", fontWeight: 700, marginTop: 5 }}>
         Trending
       </Typography>
       <Box sx={{ border: "1px solid #cfceca", borderRadius: "10px" }}>

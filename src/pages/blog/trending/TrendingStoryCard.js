@@ -12,7 +12,11 @@ const TrendingStoryCard = ({ title, description, timeAgo, views, image }) => {
             src={image}
             height="72px"
             width="72px"
-            style={{ borderRadius: "5px" }}
+            style={{
+              borderRadius: "5px",
+              objectPosition: "left", // Display the left half of the image
+              objectFit: "cover", // Disable resizing of the image
+            }}
           />
           <Box sx={{ width: "70%" }}>
             <Row>

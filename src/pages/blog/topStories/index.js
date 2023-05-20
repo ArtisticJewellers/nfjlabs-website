@@ -1,9 +1,9 @@
 import React from "react";
-import ts1 from "../../../assets/blog/topStories/ts1.png";
-import ts2 from "../../../assets/blog/topStories/ts2.png";
-import ts3 from "../../../assets/blog/topStories/ts3.png";
-import ts4 from "../../../assets/blog/topStories/ts4.png";
-import ts5 from "../../../assets/blog/topStories/ts5.png";
+import b1 from "../../../assets/blog/blogs/b1.jpg";
+import b2 from "../../../assets/blog/blogs/b2.jpg";
+import b3 from "../../../assets/blog/blogs/b3.jpg";
+import b4 from "../../../assets/blog/blogs/b4.jpg";
+import b5 from "../../../assets/blog/blogs/b5.jpg";
 import Row from "../../../components/common/Row";
 import Web from "./Web";
 import { Box, Container } from "@mui/material";
@@ -17,7 +17,7 @@ const TopStories = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
       writer: "writer Name",
       views: "2.5k",
-      image: ts1,
+      image: b1,
     },
     {
       title: " Lorem ipsum dolor sit amet, consectetur. ",
@@ -25,7 +25,7 @@ const TopStories = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
       writer: "writer Name",
       views: "2.5k",
-      image: ts2,
+      image: b2,
     },
     {
       title: " Lorem ipsum dolor sit amet, consectetur. ",
@@ -33,7 +33,7 @@ const TopStories = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
       writer: "writer Name",
       views: "2.5k",
-      image: ts3,
+      image: b3,
     },
     {
       title: " Lorem ipsum dolor sit amet, consectetur. ",
@@ -41,7 +41,7 @@ const TopStories = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
       writer: "writer Name",
       views: "2.5k",
-      image: ts4,
+      image: b4,
     },
     {
       title: " Lorem ipsum dolor sit amet, consectetur. ",
@@ -49,7 +49,7 @@ const TopStories = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing lor em dolo lorem ",
       writer: "writer Name",
       views: "2.5k",
-      image: ts5,
+      image: b5,
     },
   ];
   return (
