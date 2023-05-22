@@ -10,7 +10,7 @@ const VisionCard = ({ vision }) => {
     <>
       <Row
         sx={{
-          width: "48%",
+          width: { xs: "100%", sm: "100%", md: "48%" },
           background: "#ffff",
           marginY: 1,
           borderRadius: "15px",
@@ -19,23 +19,45 @@ const VisionCard = ({ vision }) => {
       >
         <Box>{/* <Typography>dev</Typography> */}</Box>
         <Box sx={{ width: "55%" }}>
-          <Typography sx={{ fontWeight: 600, fontSize: "20px" }}>
+          <Typography
+            sx={{
+              fontWeight: 600,
+              fontSize: { xs: "15px", sm: "18px", md: "20px" },
+            }}
+          >
             {title}
           </Typography>
           <Spacer size={8} />
-          <Typography sx={{ fontWeight: 400, fontSize: "18px", width: "90%" }}>
+          <Typography
+            sx={{
+              fontWeight: 400,
+              fontSize: { xs: "10px", sm: "15px", md: "20px" },
+              width: "90%",
+            }}
+          >
             {description}
           </Typography>
           <Spacer size={12} />
           {/* <Box display="inline"> */}
-          <Row sx={{ width: "35%" }}>
+          <Row>
             <Typography
               color="primary"
-              sx={{ fontWeight: 400, fontSize: "13px", cursor: "pointer" }}
+              sx={{
+                fontWeight: 400,
+                fontSize: { xs: "9px", sm: "15px", md: "20px" },
+                cursor: "pointer",
+              }}
             >
               Explore more
             </Typography>
-            <East sx={{ fontSize: "13px", color: "#F0A72C" }} />
+            <East
+              sx={{
+                fontSize: { xs: "9px", sm: "15px", md: "20px" },
+                color: "#F0A72C",
+                marginX: 1,
+              }}
+            />
+            <Box flexGrow={1} />
           </Row>
           {/* </Box> */}
         </Box>

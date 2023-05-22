@@ -17,7 +17,12 @@ const OurVision = () => {
         <Container>
           <Centered>
             <Headding text="Our Vision" />
-            <Typography sx={{ textAlign: "center" }}>
+            <Typography
+              sx={{
+                textAlign: "center",
+                fontSize: { xs: "10px", sm: "15px", md: "20px" },
+              }}
+            >
               Lorem ipsum dolor sit amet consectetur. Nam placerat imperdiet non
               nibh sed at elementum sed. Placerat semper pretium quis sed at.
               Elementum quam amet odio nisl quis sagittis. Consequat amet
