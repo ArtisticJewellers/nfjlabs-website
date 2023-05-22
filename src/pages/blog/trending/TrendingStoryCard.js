@@ -3,10 +3,10 @@ import Row from "../../../components/common/Row";
 import { Box, Divider, Typography } from "@mui/material";
 import Navigate from "../../../components/common/Navigate";
 
-const TrendingStoryCard = ({ title, description, timeAgo, views, image }) => {
+const TrendingStoryCard = ({ title, description, timeAgo, views, image,id }) => {
   return (
     <>
-      <Navigate to="/blog/1">
+      <Navigate to={`/blog/${id}`}>
         <Row sx={{ margin: 2 }}>
           <img
             src={image}

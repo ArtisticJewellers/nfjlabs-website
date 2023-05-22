@@ -5,10 +5,10 @@ import { CheckCircle } from "@mui/icons-material";
 import Navigate from "../../../components/common/Navigate";
 import truncateString from "../../../helpers/truncateString";
 
-const StoryCard = ({ title, writer, views, image }) => {
+const StoryCard = ({ title, writer, views, image, id }) => {
   return (
     <Box sx={{ width: "18%" }}>
-        <Navigate to="/blog/1">
+      <Navigate to={`/blog/${id}`}>
         <img src={image} style={{ borderRadius: "5px" }} width="100%" />
         <Typography sx={{ fontWeight: 700, fontSize: "18px" }}>
           {truncateString(title, 30)}
@@ -27,8 +27,8 @@ const StoryCard = ({ title, writer, views, image }) => {
             2hours ago
           </Typography>
         </Row>
-    </Navigate>
-      </Box>
+      </Navigate>
+    </Box>
   );
 };
 

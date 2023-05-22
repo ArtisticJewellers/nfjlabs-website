@@ -8,6 +8,7 @@ import MoreStoriesCard from "./MoreStoriesCard";
 const MoreStories = () => {
   const moreStories = [
     {
+      id:1,
       title: "How is Blockchain Shaping the Diamond Industry?",
       description:
         "The diamond industry is often associated with opulence and luxury, but it is also notorious for its lack of transparency and accountability. In recent years, blockchain technology has emerged as a game-changer in this industry.",
@@ -17,6 +18,7 @@ const MoreStories = () => {
       image: ms1,
     },
     {
+      id:2,
       title: "How Blockchain Technology is Changing the Jewellery Industry?",
       description:
         "The blockchain is a digital ledger that records transactions between parties in a permanent way, allowing them to be tracked and verified. It’s this ability to track and verify transactions that makes it so useful for the jewellery industry.",
@@ -26,6 +28,7 @@ const MoreStories = () => {
       image: ms2,
     },
     {
+      id:3,
       title: "The Future of Jewellery Manufacturing and the Role of Technology",
       description:
         "Technology is changing the jewellery manufacturing industry at a rapid pace. The future of jewellery manufacturing will be all about using technology to create more efficient, cost-effective, innovative products.",

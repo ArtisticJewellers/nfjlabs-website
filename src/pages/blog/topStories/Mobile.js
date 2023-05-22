@@ -4,10 +4,10 @@ import Row from "../../../components/common/Row";
 import Navigate from "../../../components/common/Navigate";
 import truncateString from "../../../helpers/truncateString";
 
-const StoryCard = ({ title, description, writer, views, image }) => {
+const StoryCard = ({ title, description, writer, views, image,id }) => {
   return (
     <>
-      <Navigate to="/blog/1">
+      <Navigate to={`/blog/${id}`}>
         <Row sx={{ marginY: 3 }}>
           <Box width="70%">
             <Typography sx={{ fontWeight: 600, fontSize: "14px" }}>

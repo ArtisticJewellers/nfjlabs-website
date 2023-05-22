@@ -4,6 +4,7 @@ import Row from "../../../components/common/Row";
 import Avatar from "../../../components/common/Avatar";
 import Spacer from "../../../components/common/Spacer";
 import truncateString from "../../../helpers/truncateString";
+import Navigate from "../../../components/common/Navigate";
 
 const MoreStoriesCard = ({
   title,
@@ -12,9 +13,11 @@ const MoreStoriesCard = ({
   date,
   readTime,
   image,
+  id
 }) => {
   return (
     <>
+    <Navigate to={`/blog/${id}`}>
       <Box sx={{ marginY: 5 }}>
         <Row>
           <Box width="60%">
@@ -63,6 +66,7 @@ const MoreStoriesCard = ({
         </Row>
       </Box>
       <Divider />
+      </Navigate>
     </>
   );
 };
