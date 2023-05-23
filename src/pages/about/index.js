@@ -7,8 +7,7 @@ import News from "./news";
 const About = () => {
   return (
     <>
-      <Box sx={{ mt: 10 }} />
-
+      <Box sx={{ mt: 5 }} />
       <OurVision />
       <Milestones />
       <News />
