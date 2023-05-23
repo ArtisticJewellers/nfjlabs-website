@@ -10,6 +10,7 @@ const OurVision = () => {
     <>
       <Box
         sx={{
+          paddingY:5,
           background:
             "linear-gradient(106.61deg, rgba(255, 218, 164, 0.19) 8.3%, #FFF9EF 28.06%, rgba(255, 218, 164, 0.13) 48.66%, #FFF9EF 71.79%, rgba(255, 218, 164, 0.19) 89.02%)",
         }}

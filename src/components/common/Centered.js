@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 
-const Centered = ({ children }) => {
+const Centered = ({ children, bothAxis }) => {
   return (
     <Box
       sx={{
@@ -9,6 +9,7 @@ const Centered = ({ children }) => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
+        height: bothAxis ? "100%" : undefined,
       }}
     >
       {children}
