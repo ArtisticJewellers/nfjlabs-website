@@ -3,26 +3,32 @@ import Row from "../../../components/common/Row";
 import { Box, Typography } from "@mui/material";
 import Spacer from "../../../components/common/Spacer";
 import { East } from "@mui/icons-material";
+import Centered from "../../../components/common/Centered";
 
 const VisionCard = ({ vision }) => {
-  const { title, description } = vision;
+  const { title, description, img } = vision;
   return (
     <>
       <Row
         sx={{
           width: { xs: "100%", sm: "100%", md: "48%" },
           background: "#ffff",
-          marginY: 1,
-          borderRadius: "15px",
+          marginY: 2,
+          borderRadius: "20px",
           paddingY: 3,
+          justifyContent: "space-evenly",
         }}
       >
-        <Box>{/* <Typography>dev</Typography> */}</Box>
+        <Box width="30%">
+          <Centered>
+            <img src={img} width="100%" />
+          </Centered>
+        </Box>
         <Box sx={{ width: "55%" }}>
           <Typography
             sx={{
               fontWeight: 600,
-              fontSize: { xs: "15px", sm: "18px", md: "20px" },
+              fontSize: { xs: "15px", sm: "18px", md: "19px" },
             }}
           >
             {title}
@@ -31,7 +37,7 @@ const VisionCard = ({ vision }) => {
           <Typography
             sx={{
               fontWeight: 400,
-              fontSize: { xs: "10px", sm: "15px", md: "20px" },
+              fontSize: { xs: "10px", sm: "15px", md: "16px" },
               width: "90%",
             }}
           >
@@ -44,7 +50,7 @@ const VisionCard = ({ vision }) => {
               color="primary"
               sx={{
                 fontWeight: 400,
-                fontSize: { xs: "9px", sm: "15px", md: "20px" },
+                fontSize: { xs: "9px", sm: "15px", md: "15px" },
                 cursor: "pointer",
               }}
             >

@@ -11,19 +11,18 @@ const Team = () => {
   return (
     <>
       <Container>
-      <Spacer size={10} />
+        <Spacer size={10} />
         <Centered>
           <Heading size="s1">Meet The Team</Heading>
         </Centered>
         <TeamTabs onChange={() => {}} />
-        <Spacer size={10} />
         <Row
           sx={{
             flexWrap: "wrap",
             justifyContent: { xs: "space-evenly", sm: "space-between" },
+            marginY:5
           }}
         >
-
           <TeamCard />
           <TeamCard />
         </Row>

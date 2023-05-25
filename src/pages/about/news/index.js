@@ -26,7 +26,7 @@ const News = () => {
       >
         <Container sx={{ my: { xs: 2, sm: 5, md: 5 } }}>
           <Centered>
-            <Headding color="#1757AA">In the news</Headding>
+            <Headding size="s1" color="#1757AA">In the news</Headding>
           </Centered>
           <Row>
             {partners.map((partner) => (
