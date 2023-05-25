@@ -80,7 +80,12 @@ const Artist = () => {
           }}
         >
           <ArtistInfo />
-          <img width="36%" style={{ borderRadius: "10px" }} src={artist} />
+          <img
+            alt="Alessio Boschi"
+            width="36%"
+            style={{ borderRadius: "10px" }}
+            src={artist}
+          />
         </Box>
       </>
     );

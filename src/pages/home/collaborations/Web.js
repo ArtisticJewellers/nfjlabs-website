@@ -17,7 +17,7 @@ const Web = ({ collaborators }) => {
             alignItems: "center",
           }}
         >
-          <img width="187px" src={image} />
+          <img alt={name} width="187px" src={image} />
           <Typography
             sx={{ fontWeight: 700, fontSize: "33px", color: "#84592C" }}
           >

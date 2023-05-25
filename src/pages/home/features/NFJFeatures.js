@@ -58,7 +58,7 @@ const NFJFeatures = () => {
                   padding: "10px",
                 }}
               >
-                <img src={image} width="100%" />
+                <img alt={feature} src={image} width="100%" />
               </Box>
               <Typography
                 sx={{

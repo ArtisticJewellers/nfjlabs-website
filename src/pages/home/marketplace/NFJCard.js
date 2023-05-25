@@ -36,7 +36,7 @@ const NFJCard = ({ name, gif, type, value }) => {
               Your browser does not support the video tag.
             </video>
           ) : (
-            <img width="100%" src={gif} alt="NFT" />
+            <img width="100%" src={gif} alt={truncateString(name, 13)} />
           )}
         </Box>
       </Centered>

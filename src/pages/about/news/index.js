@@ -26,17 +26,19 @@ const News = () => {
       >
         <Container sx={{ my: { xs: 2, sm: 5, md: 5 } }}>
           <Centered>
-            <Headding size="s1" color="#1757AA">In the news</Headding>
+            <Headding size="s1" color="#1757AA">
+              In the news
+            </Headding>
           </Centered>
           <Row>
-            {partners.map((partner) => (
+            {partners.map((partner, index) => (
               <Box
                 sx={{
                   mx: { xs: 2, sm: 5, md: 5 },
                   width: { xs: "100px", sm: "150px", md: "200px" },
                 }}
               >
-                <img width="100%" src={partner} />
+                <img width="100%" src={partner} alt={`news-${index}`} />
               </Box>
             ))}
           </Row>

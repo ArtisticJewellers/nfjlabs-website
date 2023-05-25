@@ -4,7 +4,7 @@ import Row from "../../../components/common/Row";
 import Navigate from "../../../components/common/Navigate";
 import truncateString from "../../../helpers/truncateString";
 
-const StoryCard = ({ title, description, writer, views, image,id }) => {
+const StoryCard = ({ title, description, writer, views, image, id }) => {
   return (
     <>
       <Navigate to={`/blog/${id}`}>
@@ -33,6 +33,7 @@ const StoryCard = ({ title, description, writer, views, image,id }) => {
             </Row>
           </Box>
           <img
+            alt={truncateString(title, 15)}
             src={image}
             height="86px"
             width="86px"

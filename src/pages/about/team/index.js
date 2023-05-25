@@ -20,7 +20,7 @@ const Team = () => {
           sx={{
             flexWrap: "wrap",
             justifyContent: { xs: "space-evenly", sm: "space-between" },
-            marginY:5
+            marginY: 5,
           }}
         >
           <TeamCard />

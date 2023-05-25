@@ -16,6 +16,7 @@ const Mobile = () => {
         }}
       >
         <img
+          alt="coin"
           style={{
             borderRadius: "50px",
             marginTop: "10px",

@@ -23,7 +23,7 @@ const Web = () => {
   return (
     <>
       <div>
-        <img width="120px" src={ribbon} />
+        <img alt="trending-ribbon" width="120px" src={ribbon} />
         <Box sx={{ width: "220px", marginTop: 1 }}>
           <Grid container spacing={1}>
             <Grid item xs={6}>
@@ -49,7 +49,7 @@ const Mobile = () => {
   return (
     <>
       <div>
-        <img width="100px" src={ribbon} />
+        <img alt="trending-ribbon" width="100px" src={ribbon} />
         <Box sx={{ width: "100%", marginTop: 1 }}>
           <Grid container spacing={1}>
             <Grid item xs={3}>

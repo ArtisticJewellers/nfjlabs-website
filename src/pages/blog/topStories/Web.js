@@ -9,7 +9,12 @@ const StoryCard = ({ title, writer, views, image, id }) => {
   return (
     <Box sx={{ width: "18%" }}>
       <Navigate to={`/blog/${id}`}>
-        <img src={image} style={{ borderRadius: "5px" }} width="100%" />
+        <img
+          alt={truncateString(title, 15)}
+          src={image}
+          style={{ borderRadius: "5px" }}
+          width="100%"
+        />
         <Typography sx={{ fontWeight: 700, fontSize: "18px" }}>
           {truncateString(title, 30)}
         </Typography>

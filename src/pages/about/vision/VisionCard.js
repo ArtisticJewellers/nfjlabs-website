@@ -21,7 +21,7 @@ const VisionCard = ({ vision }) => {
       >
         <Box width="30%">
           <Centered>
-            <img src={img} width="100%" />
+            <img src={img} width="100%" alt={title} />
           </Centered>
         </Box>
         <Box sx={{ width: "55%" }}>

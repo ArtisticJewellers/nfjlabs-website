@@ -2,13 +2,22 @@ import React from "react";
 import Row from "../../../components/common/Row";
 import { Box, Divider, Typography } from "@mui/material";
 import Navigate from "../../../components/common/Navigate";
+import truncateString from "../../../helpers/truncateString";
 
-const TrendingStoryCard = ({ title, description, timeAgo, views, image,id }) => {
+const TrendingStoryCard = ({
+  title,
+  description,
+  timeAgo,
+  views,
+  image,
+  id,
+}) => {
   return (
     <>
       <Navigate to={`/blog/${id}`}>
         <Row sx={{ margin: 2 }}>
           <img
+            alt={truncateString(title, 15)}
             src={image}
             height="72px"
             width="72px"

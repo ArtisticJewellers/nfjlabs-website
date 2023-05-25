@@ -16,7 +16,7 @@ const Mobile = ({ collaborators }) => {
             backgroundSize: "cover",
             borderRadius: "10px",
             paddingY: 2,
-            marginX: 1
+            marginX: 1,
           }}
         >
           <Box
@@ -29,7 +29,7 @@ const Mobile = ({ collaborators }) => {
             }}
           >
             <Box sx={{ width: { xs: "70px", sm: "100px", md: "100px" } }}>
-              <img width="100%" src={image} />
+              <img alt={name} width="100%" src={image} />
             </Box>
 
             <Typography
@@ -37,7 +37,6 @@ const Mobile = ({ collaborators }) => {
                 fontWeight: 700,
                 fontSize: { xs: "15px", sm: "20px", md: "20px" },
                 color: "#84592C",
-
               }}
             >
               {name}
@@ -59,11 +58,11 @@ const Mobile = ({ collaborators }) => {
             justifyContent: "space-evenly",
           }}
         >
-        <Carousel slidesToShow={2}>
-          {collaborators.map((collaborator) => (
-            <DisplayCollab {...collaborator} />
-          ))}
-        </Carousel>
+          <Carousel slidesToShow={2}>
+            {collaborators.map((collaborator) => (
+              <DisplayCollab {...collaborator} />
+            ))}
+          </Carousel>
         </Box>
       </Box>
     </>

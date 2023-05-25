@@ -46,7 +46,7 @@ const MilestoneRadioBtn = ({ onChange }) => {
           }}
         >
           <Centered bothAxis>
-            <img src={img} width="35%" />
+            <img src={img} width="35%" alt="milestone-icon" />
           </Centered>
         </Box>
       </>

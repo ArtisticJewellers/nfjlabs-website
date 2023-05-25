@@ -12,7 +12,7 @@ const GridImage = ({ galleryItems }) => {
         cols={6}
         gap={screenSize === "xs" ? 5 : 20}
       >
-        {galleryItems.map((item) => (
+        {galleryItems.map((item, index) => (
           <ImageListItem key={item.img}>
             <Box
               sx={{
