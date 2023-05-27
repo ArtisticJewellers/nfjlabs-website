@@ -1,6 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import dolce from "../../../assets/homePage/trending/dolce.gif";
 import Centered from "../../../components/common/Centered";
 
 const NFJCard = ({ name, gif, type, value }) => {
@@ -12,7 +11,7 @@ const NFJCard = ({ name, gif, type, value }) => {
     }
   }
 
-  const isVideo = gif.endsWith(".mp4");
+  const isVideo = gif.endsWith(".webm");
   return (
     <Box
       sx={{

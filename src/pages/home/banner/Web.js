@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import Trending from "./Trending";
-import coin from "../../../assets/homePage/trending/coin.gif";
+import coin from "../../../assets/homePage/trending/coin.webp";
 import ProductInfo from "./ProductInfo";
 
 const Web = () => {

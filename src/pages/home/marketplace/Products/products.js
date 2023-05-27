@@ -1,14 +1,14 @@
-import dolce from "../../../../assets/homePage/trending/dolce.gif";
-import goldenstan from "../../../../assets/homePage/trending/Goldenstan.gif";
-import lion from "../../../../assets/homePage/trending/lion.gif";
-import qajar from "../../../../assets/homePage/trending/qajar.gif";
+import dolce from "../../../../assets/homePage/trending/dolce.webp";
+import goldenstan from "../../../../assets/homePage/trending/Goldenstan.webp";
+import lion from "../../../../assets/homePage/trending/sun-lion.webp";
+import qajar from "../../../../assets/homePage/trending/qajar.webp";
 
-import emerald from "../../../../assets/homePage/marketplace/gems/emerald.mp4";
-import opal from "../../../../assets/homePage/marketplace/gems/opal.mp4";
-import ruby from "../../../../assets/homePage/marketplace/gems/ruby.mp4";
-import saphire from "../../../../assets/homePage/marketplace/gems/saphire.mp4";
+import emerald from "../../../../assets/homePage/marketplace/gems/emerald.webm";
+import opal from "../../../../assets/homePage/marketplace/gems/opal.webm";
+import ruby from "../../../../assets/homePage/marketplace/gems/ruby.webm";
+import saphire from "../../../../assets/homePage/marketplace/gems/saphire.webm";
 
-import silverCoin from "../../../../assets/homePage/trending/coin.gif"
+import silverCoin from "../../../../assets/homePage/trending/coin.webp"
 
 
 export const jewellery = [

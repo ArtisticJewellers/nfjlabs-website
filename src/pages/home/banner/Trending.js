@@ -2,10 +2,10 @@ import { Box, Grid } from "@mui/material";
 import React from "react";
 import ribbon from "../../../assets/homePage/trending/ribbon.png";
 
-import dolce from "../../../assets/homePage/trending/dolce.gif";
-import goldenstan from "../../../assets/homePage/trending/Goldenstan.gif";
-import qajar from "../../../assets/homePage/trending/qajar.gif";
-import lion from "../../../assets/homePage/trending/lion.gif";
+import dolce from "../../../assets/homePage/trending/dolce.webp";
+import goldenstan from "../../../assets/homePage/trending/Goldenstan.webp";
+import qajar from "../../../assets/homePage/trending/qajar.webp";
+import lion from "../../../assets/homePage/trending/sun-lion.webp";
 
 const DisplayGif = ({ web, src }) => {
   return (

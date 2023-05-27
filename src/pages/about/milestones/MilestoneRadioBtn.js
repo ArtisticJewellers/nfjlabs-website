@@ -32,7 +32,7 @@ const MilestoneRadioBtn = ({ onChange }) => {
         <Box
           onClick={onClick}
           sx={{
-            background: index == activeBtn ? bg : `${bg}75`,
+            background: index == activeBtn ? bg : `${bg}40`,
             height: { xs: "45px", sm: "70px", md: "100px", lg: "150px" },
             width: { xs: "45px", sm: "70px", md: "100px", lg: "150px" },
             borderRadius: "50%",

@@ -19,7 +19,7 @@ const Team = () => {
         <Row
           sx={{
             flexWrap: "wrap",
-            justifyContent: { xs: "space-evenly", sm: "space-between" },
+            justifyContent: { xs: "space-evenly", sm: "space-evenly" },
             marginY: 5,
           }}
         >
