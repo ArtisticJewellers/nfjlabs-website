@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../Banner";
 import Body from "./Body";
-import blogImage from "../../../../assets/blog/blogs/b3.jpg";
+import blogImage from "../../../../assets/blog/blogs/b3.webp";
 
 const B3 = () => {
   const bannerDetails = {

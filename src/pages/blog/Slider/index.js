@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import slider1Bg from "../../../assets/blog/blogs/b1.jpg";
-import slider2Bg from "../../../assets/blog/blogs/b2.jpg";
+import slider1Bg from "../../../assets/blog/blogs/b1.webp";
+import slider2Bg from "../../../assets/blog/blogs/b2.webp";
 import Carousel from "../../../components/common/Carousel.js.js";
 import Slide from "./slide";
 import { Box, Container, Typography } from "@mui/material";

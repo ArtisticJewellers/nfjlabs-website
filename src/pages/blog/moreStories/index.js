@@ -1,7 +1,7 @@
 import React from "react";
-import ms1 from "../../../assets/blog/blogs/b1.jpg";
-import ms2 from "../../../assets/blog/blogs/b2.jpg";
-import ms3 from "../../../assets/blog/blogs/b3.jpg";
+import ms1 from "../../../assets/blog/blogs/b1.webp";
+import ms2 from "../../../assets/blog/blogs/b2.webp";
+import ms3 from "../../../assets/blog/blogs/b3.webp";
 import { Box, Typography } from "@mui/material";
 import MoreStoriesCard from "./MoreStoriesCard";
 

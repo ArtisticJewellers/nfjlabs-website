@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import b1 from "../../../assets/blog/blogs/b1.jpg";
-import b2 from "../../../assets/blog/blogs/b2.jpg";
-import b3 from "../../../assets/blog/blogs/b3.jpg";
-import b4 from "../../../assets/blog/blogs/b4.jpg";
+import b1 from "../../../assets/blog/blogs/b1.webp";
+import b2 from "../../../assets/blog/blogs/b2.webp";
+import b3 from "../../../assets/blog/blogs/b3.webp";
+import b4 from "../../../assets/blog/blogs/b4.webp";
 import HighlightsStoryCard from "./HighlightsStoryCard";
 
 const Highlights = ({ blogDetail }) => {

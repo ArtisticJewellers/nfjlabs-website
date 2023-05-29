@@ -1,6 +1,6 @@
 import React from "react";
 import Body from "./Body";
-import blogImage from "../../../../assets/blog/blogs/b1.jpg";
+import blogImage from "../../../../assets/blog/blogs/b1.webp";
 import Banner from "../Banner";
 
 const B1 = () => {

@@ -1,6 +1,6 @@
 import { Box, Container, Typography, TextField, Button } from "@mui/material";
 import React from "react";
-import backgroundImage from "../../../assets/blog/subscribe/background.png";
+import backgroundImage from "../../../assets/blog/subscribe/background.webp";
 import Centered from "../../../components/common/Centered";
 import Row from "../../../components/common/Row";
 import Spacer from "../../../components/common/Spacer";
