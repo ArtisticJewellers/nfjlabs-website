@@ -2,7 +2,7 @@ import { Box, Container, Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import Centered from "../../../components/common/Centered";
 
-import backgroundImage from "../../../assets/homePage/collaborations/webBackground.png";
+import backgroundImage from "../../../assets/homePage/collaborations/webBackground.webp";
 import Carousel from "../../../components/common/Carousel.js";
 
 const Web = ({ collaborators }) => {

@@ -3,11 +3,11 @@ import Centered from "../../../components/common/Centered";
 import { Box, Typography } from "@mui/material";
 import Headding from "../../../components/common/Headding";
 
-import backgroundImage from "../../../assets/homePage/partners/background.png";
-import bitsCrunch from "../../../assets/homePage/partners/bitsCrunch.png";
-import unisot from "../../../assets/homePage/partners/unisot.png";
-import tdefi from "../../../assets/homePage/partners/tdefi.png";
-import quill from "../../../assets/homePage/partners/quill.png";
+import backgroundImage from "../../../assets/homePage/partners/background.webp";
+import bitsCrunch from "../../../assets/homePage/partners/bitsCrunch.webp";
+import unisot from "../../../assets/homePage/partners/unisot.webp";
+import tdefi from "../../../assets/homePage/partners/tdefi.webp";
+import quill from "../../../assets/homePage/partners/quill.webp";
 
 const Partners = () => {
   const partners = [bitsCrunch, unisot, tdefi, quill];

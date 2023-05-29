@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import backgroundImage from "../../../assets/homePage/artists/artistTexture.png";
+import backgroundImage from "../../../assets/homePage/artists/artistTexture.webp";
 import Centered from "../../../components/common/Centered";
 
 const Stats = () => {

@@ -3,8 +3,8 @@ import React from "react";
 import Web from "./Web";
 import Mobile from "./Mobile";
 
-import alessio from "../../../assets/homePage/collaborations/alessio.png";
-import orient from "../../../assets/homePage/collaborations/orient.png";
+import alessio from "../../../assets/homePage/collaborations/alessio.webp";
+import orient from "../../../assets/homePage/collaborations/orient.webp";
 import Centered from "../../../components/common/Centered";
 import Headding from "../../../components/common/Headding";
 

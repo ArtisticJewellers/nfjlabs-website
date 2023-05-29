@@ -1,7 +1,7 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
 import OutArrowBtn from "../../../components/common/OutArrowBtn";
-import artist from "../../../assets/homePage/artists/artist.png";
+import artist from "../../../assets/homePage/artists/artist.webp";
 import Carousel from "../../../components/common/Carousel.js";
 import JoinUsModal from "./JoinUsModal";
 

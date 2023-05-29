@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 
-import backgroundImage from "../../../assets/homePage/collaborations/mobileBackground.png";
+import backgroundImage from "../../../assets/homePage/collaborations/mobileBackground.webp";
 import Carousel from "../../../components/common/Carousel.js";
 
 const Mobile = ({ collaborators }) => {

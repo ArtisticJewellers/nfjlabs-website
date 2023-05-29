@@ -3,11 +3,11 @@ import Centered from "../../../components/common/Centered";
 import { Box, Container, Typography } from "@mui/material";
 import Headding from "../../../components/common/Headding";
 
-import news18 from "../../../assets/about/news/News18.png";
-import economic from "../../../assets/about/news/the_economic_times.png";
-import republic from "../../../assets/about/news/republic_world.png";
-import dainik from "../../../assets/about/news/dainik_bhaskar.png";
-import backgroundImage from "../../../assets/homePage/partners/background.png";
+import news18 from "../../../assets/about/news/News18.webp";
+import economic from "../../../assets/about/news/the_economic_times.webp";
+import republic from "../../../assets/about/news/republic_world.webp";
+import dainik from "../../../assets/about/news/dainik_bhaskar.webp";
+import backgroundImage from "../../../assets/homePage/partners/background.webp";
 
 import Row from "../../../components/common/Row";
 

@@ -1,6 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import backgroundImage from "../../../assets/homePage/collaborations/webBackground.png";
 import Centered from "../../../components/common/Centered";
 import Headding from "../../../components/common/Headding";
 import Visions from "./Visions";
