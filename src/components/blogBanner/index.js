@@ -1,6 +1,7 @@
 import { Adjust, ExpandCircleDown } from "@mui/icons-material";
 import { Box, Chip, Container, IconButton, Typography } from "@mui/material";
 import React from "react";
+import Spacer from "../common/Spacer";
 
 const BlogBanner = ({ slide, clickable }) => {
   function truncateString(str, maxLength) {
@@ -53,21 +54,23 @@ const BlogBanner = ({ slide, clickable }) => {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            height: "100%",
+            height: "80%",
             paddingY: "10px",
           }}
         >
-          <Box sx={{ width: "85%", alignSelf: "end" }}>
-            <UpdateChip />
-            <Typography
+          <UpdateChip />
+          <Box sx={{ width: "100%", alignSelf: "end" }}>
+            <Spacer size={10} />
+
+            {/* TITLE */}
+            {/* <Typography
               sx={{
                 fontWeight: 700,
                 fontSize: { xs: "20px", sm: "30", md: "60px" },
               }}
             >
               {truncateString(title, 30)}
-            </Typography>
-            <Typography>{truncateString(description, 300)}</Typography>
+            </Typography> */}
           </Box>
           <Box sx={{ display: clickable ? "block" : "none" }}>
             <IconButton color="secondary">
@@ -76,6 +79,9 @@ const BlogBanner = ({ slide, clickable }) => {
           </Box>
 
           {/* </Box> */}
+        </Container>
+        <Container>
+          <Typography>{truncateString(description, 250)}</Typography>
         </Container>
       </Box>
     </Box>
