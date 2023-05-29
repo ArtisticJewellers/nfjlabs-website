@@ -1,13 +1,24 @@
-import { Box, Button, Container, Divider, IconButton, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import BlogBanner from "../../../components/blogBanner";
 import { ArrowBack } from "@mui/icons-material";
 import Row from "../../../components/common/Row";
 import Avatar from "../../../components/common/Avatar";
 import Spacer from "../../../components/common/Spacer";
+import Centered from "../../../components/common/Centered";
+import { useNavigate, useNavigation } from "react-router-dom";
 
 const Banner = ({ bannerDetails }) => {
   const { title, writer, bgImage, description } = bannerDetails;
+  const navigation = useNavigate();
+
   const Web = () => {
     return (
       <>
@@ -32,36 +43,49 @@ const Banner = ({ bannerDetails }) => {
             mb: 2,
           }}
         >
-          <IconButton>
-            <ArrowBack color="secondary" />
-          </IconButton>
+          <Box
+            sx={{
+              height: "45px",
+              width: "45px",
+              borderRadius: "50%",
+              background: "#ffffff50",
+              backdropFilter: "blur(2px)",
+              marginLeft:1
+            }}
+          >
+            <Centered bothAxis>
+              <IconButton onClick={() => {navigation(-1)}}>
+                <ArrowBack />
+              </IconButton>
+            </Centered>
+          </Box>
         </Box>
         <>
-        <Container>
-          <Typography sx={{ fontWeight: 600, fontSize: "20px" }}>
-            {title}
-          </Typography>
-          <Row sx={{ marginY: 2 }}>
-            <Row>
-              <Avatar text="AN" size={35} />
-              <Spacer row size={10} />
-              <Box>
-                <Typography
-                  sx={{ fontWeight: 600, fontSize: "10px", color: "#2E2E2E" }}
-                >
-                  {writer}
-                </Typography>
-                <Typography
-                  sx={{ fontWeight: 500, fontSize: "9px", color: "#808080" }}
-                >
-                  2 hours ago
-                </Typography>
-              </Box>
-            </Row>
+          <Container>
+            <Typography sx={{ fontWeight: 600, fontSize: "20px" }}>
+              {title}
+            </Typography>
+            <Row sx={{ marginY: 2 }}>
+              <Row>
+                <Avatar text="AN" size={35} />
+                <Spacer row size={10} />
+                <Box>
+                  <Typography
+                    sx={{ fontWeight: 600, fontSize: "10px", color: "#2E2E2E" }}
+                  >
+                    {writer}
+                  </Typography>
+                  <Typography
+                    sx={{ fontWeight: 500, fontSize: "9px", color: "#808080" }}
+                  >
+                    2 hours ago
+                  </Typography>
+                </Box>
+              </Row>
 
-            <Button variant="contained">Subscribe</Button>
-          </Row>
-          <Divider />
+              <Button variant="contained">Subscribe</Button>
+            </Row>
+            <Divider />
           </Container>
         </>
       </>

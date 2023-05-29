@@ -15,13 +15,15 @@ const Mobile = ({ blogDetail }) => {
           backgroundSize: "cover",
           height: "400px",
           pt: 10,
-          mb:2
+          mb: 2,
         }}
       >
         {/* <Box sx={{ mt: 10 }} /> */}
-        <IconButton>
-          <ArrowBack color="secondary" />
-        </IconButton>
+        <Box sx={{}}>
+          {/* <IconButton>
+            <ArrowBack sx={{ color: "black" }} />
+          </IconButton> */}
+        </Box>
       </Box>
       <Container>
         <Body {...blogDetail} />

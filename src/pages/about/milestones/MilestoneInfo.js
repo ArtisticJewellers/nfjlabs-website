@@ -7,7 +7,7 @@ const MilestoneInfo = ({ title, list }) => {
       <Box
         sx={{
           marginTop: 2,
-          height: { xs: "50px", sm: "150px", md: "200px", lg: "200px" },
+          height: { xs: "70px", sm: "150px", md: "200px", lg: "200px" },
         }}
       >
         <Typography

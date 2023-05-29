@@ -12,7 +12,7 @@ import backgroundImage from "../../../assets/homePage/partners/background.webp";
 import Row from "../../../components/common/Row";
 
 const News = () => {
-  const partners = [news18, economic, republic, dainik];
+  const news = [news18, economic, republic, dainik];
   const PartnersList = () => {
     return (
       <Box
@@ -31,14 +31,14 @@ const News = () => {
             </Headding>
           </Centered>
           <Row>
-            {partners.map((partner, index) => (
+            {news.map((n, index) => (
               <Box
                 sx={{
-                  mx: { xs: 2, sm: 5, md: 5 },
-                  width: { xs: "100px", sm: "150px", md: "200px" },
+                  mx: { xs: 1, sm: 5, md: 5 },
+                  width: { xs: "200px", sm: "150px", md: "200px" },
                 }}
               >
-                <img width="100%" src={partner} alt={`news-${index}`} />
+                <img width="100%" src={n} alt={`news-${index}`} />
               </Box>
             ))}
           </Row>

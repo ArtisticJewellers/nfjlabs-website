@@ -6,7 +6,6 @@ const Navigate = ({ to, children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log("inside navigate----->", to);
     window.scrollTo(0, 0);
   }, [to]);
 

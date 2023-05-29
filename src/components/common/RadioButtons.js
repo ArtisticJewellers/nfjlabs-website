@@ -14,7 +14,6 @@ const RadioButtons = ({ buttons, initialActiveBtn, onChange }) => {
           key={index}
           variant="contained"
           onClick={() => {
-            console.log("the clicked btn is----->", index);
             setActiveBtn(index);
             onChange(index);
           }}
