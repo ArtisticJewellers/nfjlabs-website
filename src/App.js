@@ -2,22 +2,22 @@ import { Typography } from "@mui/material";
 import NavBar from "./components/navbar";
 import About from "./pages/about";
 import Marketplace from "./pages/marketplace";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/home";
 import Blog from "./pages/blog";
 import BlogDetails from "./pages/blogDetails";
 import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    console.log("the windo object is------->", window);
-    // window.location.href = "rgregregerre";
-  }, []);
+  // Use the useLocation hook to get the current location
+  const location = useLocation();
+  const hideNavBar = location.pathname.includes("/blog/"); // Check if the current path includes "/blog/"
 
   return (
     <>
       <nav>
-        <NavBar />
+        {!hideNavBar && <NavBar />}{" "}
+        {/* Render NavBar only if hideNavBar is false */}
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />

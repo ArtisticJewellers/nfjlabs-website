@@ -22,7 +22,7 @@ const Banner = ({ bannerDetails }) => {
   const Web = () => {
     return (
       <>
-        <Box sx={{ mt: 10 }} />
+        <Box sx={{ mt: 1 }} />
         <Container>
           <BlogBanner slide={bannerDetails} />
         </Container>
@@ -39,7 +39,7 @@ const Banner = ({ bannerDetails }) => {
             backgroundPosition: "left",
             backgroundSize: "cover",
             height: "400px",
-            pt: 10,
+            pt: 1,
             mb: 2,
           }}
         >
