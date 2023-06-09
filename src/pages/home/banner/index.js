@@ -1,10 +1,12 @@
 import React from "react";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Centered from "../../../components/common/Centered";
 import backgroundImage from "../../../assets/homePage/bannerBackgroundTexture.png";
 import Web from "./Web";
 import Mobile from "./Mobile";
 import TypeAnimation from "./TypeAnimation";
+import GradientText from "../../../components/common/GradientText";
+import Gradient from "../../../components/common/Gradient";
 
 const Banner = () => {
   return (
@@ -19,8 +21,20 @@ const Banner = () => {
       }}
     >
       <Container>
+        {/* banner heading */}
         <Centered>
           <TypeAnimation />
+          {/* Static Tagline */}
+          <Gradient>
+            <Typography
+              sx={{
+                fontSize: { sx: "10px", sm: "15px", md: "20px" },
+                marginY: 2,
+              }}
+            >
+              Next-Gen Jewellery Polished With Innovation
+            </Typography>
+          </Gradient>
         </Centered>
         <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
           <Web />
