@@ -9,19 +9,6 @@ const Mobile = ({ slide }) => {
 
   return (
     <>
-      {/* <Box
-        sx={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          color: "white",
-          height: { xs: "150px", sm: "250px" },
-          // width:"100%",
-          marginX: "20px",
-          borderRadius: "10px",
-        }}
-      ></Box> */}
       <Centered>
         <img
           src={bgImage}
