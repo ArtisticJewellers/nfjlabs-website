@@ -26,12 +26,14 @@ const Explore = () => {
           fontSize: {
             xs: "30px",
             sm: "35px",
-            md: "40px",
+            md: "35px",
+            lg: "40px",
           },
           width: {
             xs: "100%",
             sm: "100%",
-            md: "400px",
+            md: "350px",
+            lg: "400px",
           },
           textAlign: {
             xs: "center",
@@ -45,7 +47,7 @@ const Explore = () => {
           },
         }}
       >
-        Why jewellery should have been NFT?
+        Transforming Jwellery Ownership With the Power of NFTs!
       </Typography>
       {/* </Centered> */}
 
@@ -55,12 +57,14 @@ const Explore = () => {
           fontSize: {
             xs: "15px",
             sm: "19px",
-            md: "19px",
+            md: "17px",
+            lg: "20px",
           },
           width: {
             xs: "100%",
             sm: "100%",
-            md: "390px",
+            md: "360px",
+            lg: "400px",
           },
           color: "#808080",
           textAlign: {
@@ -75,21 +79,12 @@ const Explore = () => {
           },
         }}
       >
-        By creating an NFT for a piece of jewelry, the owner can provide a
-        secure and transparent way to prove that they are the rightful owner and
-        that the jewelry is authentic.
+        Imagine a world where jewellery transcends its physical nature,
+        intertwining seamlessly with cutting-edge technology. That future is now
+        within reach, and the key lies in Non-Fungible Tokens (NFTs). Let's
+        explore why jewellery should embrace this groundbreaking concept and
+        unlock a world of endless possibilities.
       </Typography>
-      <Box
-        sx={{
-          display: {
-            xs: "none",
-            sm: "none",
-            md: "block",
-          },
-        }}
-      >
-        <ExploreBtn />
-      </Box>
     </Box>
   );
 };

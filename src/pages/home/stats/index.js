@@ -12,7 +12,10 @@ const Stats = () => {
             <Typography
               fontWeight="700"
               color="primary"
-              sx={{ mb: 0, fontSize: { xs: "30px", sm: "45px", md: "50px" } }}
+              sx={{
+                mb: 0,
+                fontSize: { xs: "30px", sm: "45px", md: "40px", lg: "50px" },
+              }}
             >
               {value}
             </Typography>
@@ -20,7 +23,10 @@ const Stats = () => {
               fontWeight="400"
               fontSize="25px"
               color="secondary"
-              sx={{ mt: 0, fontSize: { xs: "15px", sm: "22px", md: "25px" } }}
+              sx={{
+                mt: 0,
+                fontSize: { xs: "15px", sm: "22px", md: "20px", lg: "25px" },
+              }}
             >
               {type}
             </Typography>
@@ -72,12 +78,12 @@ const Stats = () => {
           color="#B5B5B5"
           sx={{
             textAlign: { xs: "center", sm: "center", md: "right" },
-            fontSize: { xs: "25px", sm: "40px", md: "50px" },
+            fontSize: { xs: "25px", sm: "40px", md: "30px", lg: "40px" },
             width: { xs: "100%", sm: "100%", md: "50%" },
             marginTop: { xs: "30px" },
           }}
         >
-          Meet Our Artists
+          Reasons to Count on Us
         </Typography>
       </Container>
     </Box>

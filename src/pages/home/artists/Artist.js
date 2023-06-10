@@ -1,13 +1,12 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
 import OutArrowBtn from "../../../components/common/OutArrowBtn";
-import artist from "../../../assets/homePage/artists/artist.webp";
 import Carousel from "../../../components/common/Carousel.js";
 import JoinUsModal from "./JoinUsModal";
 
-const Artist = () => {
+const Artist = ({ artistInfo }) => {
   const [openModal, setOpenModal] = useState(false);
-  const ArtistInfo = () => {
+  const ArtistInfo = ({ artistName, artistDetail1, artistDetail2 }) => {
     return (
       <>
         <Box
@@ -20,7 +19,7 @@ const Artist = () => {
             fontWeight="500"
             color="#D0880D"
           >
-            ALESSIO BOSCHI
+            {artistName}
           </Typography>
           <Typography
             width="90%"
@@ -29,10 +28,7 @@ const Artist = () => {
               marginY: "10px",
             }}
           >
-            Living in the world of our wildest imagination, fueled by an
-            unrelenting desire to create the seemingly impossible, Alessio
-            Boschi has been delighting the jewelry world with his exquisite and
-            whimsical creations for over 20 years.
+            {artistDetail1}
           </Typography>
           <Typography
             width="90%"
@@ -42,10 +38,7 @@ const Artist = () => {
               marginBottom: "30px",
             }}
           >
-            A fiercely proud Roman, he divides his time between his home in the
-            medieval village of Bagnoregio, Italy and Bangkok, Thailand, where
-            his unique collections are meticulously hand made by local and
-            international master jewelers.
+            {artistDetail2}
           </Typography>
           <Button
             sx={{
@@ -63,7 +56,8 @@ const Artist = () => {
     );
   };
 
-  const ArtistContainer = () => {
+  const ArtistContainer = ({ artistInfo }) => {
+    const { artistName, img } = artistInfo;
     return (
       <>
         <Box
@@ -79,12 +73,12 @@ const Artist = () => {
             justifyContent: "space-between",
           }}
         >
-          <ArtistInfo />
+          <ArtistInfo {...artistInfo} />
           <img
-            alt="Alessio Boschi"
+            alt={artistName}
             width="36%"
             style={{ borderRadius: "10px" }}
-            src={artist}
+            src={img}
           />
         </Box>
       </>
@@ -111,8 +105,9 @@ const Artist = () => {
           </Box>
           <Box width="100%">
             <Carousel center>
-              <ArtistContainer />
-              <ArtistContainer />
+              {artistInfo.map((info) => (
+                <ArtistContainer artistInfo={info} />
+              ))}
             </Carousel>
           </Box>
         </Box>

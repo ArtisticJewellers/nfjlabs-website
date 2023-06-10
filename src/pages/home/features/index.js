@@ -30,11 +30,6 @@ const Features = () => {
         <Explore />
         <NFJFeatures />
       </Box>
-      <Centered>
-        <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>
-          <ExploreBtn />
-        </Box>
-      </Centered>
     </Container>
   );
 };

@@ -11,25 +11,25 @@ const NFJFeatures = () => {
     {
       feature: "Traceability",
       detail:
-        "When an NFT is created for a piece of jewellry, it is recorded on a blockchain This creates a permanent and unchangeable record of the jewellry's ownership history and transaction history.",
+        "NFJ Labs makes the traceability seamless for you. By minting an NFT for each piece of jewellery, owners can establish an unbreakable chain of ownership. Through the power of blockchain technology, every transaction and change of hands is permanently recorded, creating an indisputable record of authenticity",
       image: traceability,
     },
     {
       feature: "Transparency",
       detail:
-        "NFTs can also be used to provide transparency around the ethical and sustainable practices used in the creation of the jewellery. By recording the materials used and production methods ",
+        "NFTs offer a unique opportunity to shine a light on the ethical and sustainable practices behind jewellery creation. By embedding details about materials used and production methods into the NFT, consumers can make informed choices that align with their values. Transparency becomes a guiding force, empowering buyers to support responsible craftsmanship.",
       image: transparency,
     },
     {
       feature: "Digitally Wearable",
       detail:
-        "Allows buyers to try on the jewellery in a virtual environment before making a purchase. This can help them to visualise how the jewellery will look and feel, and make a more informed purchasing decision ",
+        "Embrace the digital realm where jewellery becomes virtually wearable. With NFTs, potential buyers can immerse themselves in a captivating virtual environment, trying on exquisite pieces before making a purchase. This immersive experience allows individuals to visualize the jewellery's allure, making confident and personalized decisions.",
       image: digiWearable,
     },
     {
       feature: "Security",
       detail:
-        "Owner of the jewellery to control access to the NFT and the associated digital assets. This can prevent unauthorised access and ensure that the owner has full control over the NFT and the associated digital assets",
+        "In the realm of NFTs, security takes center stage. Owners gain unprecedented control over their jewellery through encrypted access to the associated digital assets. With ironclad protection, unauthorised access is thwarted, allowing owners to assert complete authority over their NFT and its digital representation.",
       image: security,
     },
   ];
@@ -79,12 +79,14 @@ const NFJFeatures = () => {
                   fontSize: {
                     xs: "10px",
                     sm: "12px",
-                    md: "15px",
+                    md: "14px",
+                    lg: "16px",
                   },
                   width: {
                     xs: "135px",
                     sm: "240px",
-                    md: "240px",
+                    md: "220px",
+                    lg: "300px",
                   },
                   color: "#808080",
                 }}
