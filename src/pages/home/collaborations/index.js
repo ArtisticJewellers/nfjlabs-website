@@ -3,23 +3,25 @@ import React from "react";
 import Web from "./Web";
 import Mobile from "./Mobile";
 
-import alessio from "../../../assets/homePage/collaborations/alessio.webp";
 import orient from "../../../assets/homePage/collaborations/orient.webp";
+import gs from "../../../assets/homePage/collaborations/gs.webp";
+import vitale from "../../../assets/homePage/collaborations/logo-VITALE.webp";
+
 import Centered from "../../../components/common/Centered";
 import Headding from "../../../components/common/Headding";
 
 const Collaborations = () => {
   const collaborators = [
-    { name: "Alessio Boschi", image: alessio },
+    { name: "GS Diamonds", image: gs },
     { name: "Orient Pearls", image: orient },
-    { name: "Alessio Boschi", image: alessio },
-    { name: "Orient Pearls", image: orient },
+    { name: "Vitale 1913", image: vitale },
+    // { name: "Orient Pearls", image: orient },
   ];
   return (
     <>
       <Container sx={{ marginY: "30px" }}>
         <Centered>
-          <Headding text="Collaborations"/>
+          <Headding text="Collaborations" />
         </Centered>
         <Box
           sx={{
