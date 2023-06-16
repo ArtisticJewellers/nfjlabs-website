@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import Blog from "./pages/blog";
 import BlogDetails from "./pages/blogDetails";
 import { useEffect } from "react";
+import Gallery from "./pages/gallery";
 
 function App() {
   // Use the useLocation hook to get the current location
@@ -21,10 +22,12 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/gallery" element={<Gallery/>} />
+
+        <Route path="/marketplace" element={<Marketplace />} />
       </Routes>
     </>
   );

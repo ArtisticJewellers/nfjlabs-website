@@ -4,6 +4,7 @@ import { Box, Typography } from "@mui/material";
 import Spacer from "../../../components/common/Spacer";
 import { East } from "@mui/icons-material";
 import Centered from "../../../components/common/Centered";
+import truncateString from "../../../helpers/truncateString";
 
 const VisionCard = ({ vision }) => {
   const { title, description, img } = vision;
@@ -37,11 +38,11 @@ const VisionCard = ({ vision }) => {
           <Typography
             sx={{
               fontWeight: 400,
-              fontSize: { xs: "10px", sm: "15px", md: "16px" },
+              fontSize: { xs: "10px", sm: "15px", md: "15px" },
               width: "90%",
             }}
           >
-            {description}
+            {truncateString(description, 200)}
           </Typography>
           <Spacer size={12} />
           {/* <Box display="inline"> */}

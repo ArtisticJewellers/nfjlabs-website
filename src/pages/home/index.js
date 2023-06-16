@@ -22,7 +22,7 @@ const Home = () => {
       <Artists />
       <Collaborations />
       <Partners />
-      <Gallery />
+      {/* <Gallery /> */}
       <FAQ />
       <Footer />
     </>

@@ -11,27 +11,27 @@ import v4 from "../../../assets/about/visions/v4.png";
 const Visions = () => {
   const visions = [
     {
-      title: "Vision Title",
+      title: "Jewellery",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Dignissim ornare placerat egestas magna purus",
+        "NFJ Labs presents a breathtaking collection of jewellery that seamlessly merges classic allure with contemporary elegance. Each meticulously crafted piece showcases our unwavering commitment to exceptional quality and exquisite design, offering you a world of timeless beauty.",
       img: v1,
     },
     {
-      title: "Vision Title",
+      title: "Gems",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Dignissim ornare placerat egestas magna purus",
+        "Embark on a mesmerizing journey with NFJ Labs' curated selection of breathtaking gemstones. From dazzling diamonds to captivating colored gems, our handpicked collection radiates brilliance and splendor, allowing you to create truly captivating and personalized jewellery pieces.",
       img: v2,
     },
     {
-      title: "Vision Title",
+      title: "Coins",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Dignissim ornare placerat egestas magna purus",
+        "Discover the world of numismatic wonders with our exceptional coin collection. From rare treasures to historical marvels, each coin tells a captivating story and embodies the rich heritage of numismatics, making them prized additions to any discerning collector's portfolio.",
       img: v3,
     },
     {
-      title: "Vision Title",
+      title: "Exclusive Collection",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Dignissim ornare placerat egestas magna purus",
+        "Indulge in NFJ Labs' exclusive collection, where extraordinary artistry meets unparalleled design. With limited editions and unique masterpieces, this curated selection epitomizes luxury and sophistication, ensuring that you make a statement that is truly one-of-a-kind. Elevate your style with our exquisite and distinctive creations.",
       img: v4,
     },
   ];

@@ -24,10 +24,13 @@ const OurVision = () => {
                 fontSize: { xs: "10px", sm: "15px", md: "17px" },
               }}
             >
-              Lorem ipsum dolor sit amet consectetur. Nam placerat imperdiet non
-              nibh sed at elementum sed. Placerat semper pretium quis sed at.
-              Elementum quam amet odio nisl quis sagittis. Consequat amet
-              fringilla facilisis facilisis rhoncus vitae arcu.
+              Our vision is to redefine the jewellery industry, merging
+              tradition with cutting-edge technology. NFJ Labs aims to create a
+              future where jewellery transcends its physical form, embracing the
+              boundless possibilities offered by Non-Fungible Tokens (NFTs).
+              With a focus on security and preserving the exclusivity of
+              jewellery, we strive to reshape the industry and ignite a new era
+              of personalized connection.
             </Typography>
           </Centered>
           <Visions />
