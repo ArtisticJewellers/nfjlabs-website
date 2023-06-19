@@ -92,7 +92,7 @@ const Artist = ({ artistInfo }) => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            marginY: "55px",
+            marginY: "5px",
           }}
         >
           <Box sx={{ alignSelf: "end" }}>

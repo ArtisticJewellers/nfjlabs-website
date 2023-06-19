@@ -1,10 +1,11 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
+import { Box, Typography, Collapse, IconButton } from "@mui/material";
+import React, { useState } from "react";
 import Centered from "../../../components/common/Centered";
 import traceability from "../../../assets/homePage/features/traceability.png";
 import transparency from "../../../assets/homePage/features/transparency.png";
 import digiWearable from "../../../assets/homePage/features/digiWearable.png";
 import security from "../../../assets/homePage/features/security.png";
+import truncateString from "../../../helpers/truncateString";
 
 const NFJFeatures = () => {
   const features = [
@@ -35,9 +36,15 @@ const NFJFeatures = () => {
   ];
 
   const Feature = ({ feature, detail, image }) => {
+    const [expanded, setExpanded] = useState(false);
+
+    const handleExpandClick = () => {
+      setExpanded(!expanded);
+    };
+
     return (
       <>
-        <Box sx={{ width: "50%", marginBottom: "40px" }}>
+        <Box sx={{ height:"400px", width: "50%", marginBottom: "40px" }}>
           <Centered>
             <div>
               <Box
@@ -91,8 +98,20 @@ const NFJFeatures = () => {
                   color: "#808080",
                 }}
               >
-                {detail}
+                {expanded ? detail : truncateString(detail, 200)}
               </Typography>
+              {detail.length > 200 && (
+                <IconButton
+                  onClick={handleExpandClick}
+                  sx={{
+                    marginLeft: "5px",
+                    color: "#808080",
+                    padding: "0",
+                  }}
+                >
+                  {expanded ? "Read less" : "Read more"}
+                </IconButton>
+              )}
             </div>
           </Centered>
         </Box>
@@ -109,14 +128,13 @@ const NFJFeatures = () => {
           md: "55%",
         },
         display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
+        // alignItems: "center",
+        // justifyContent: "space-between",
         flexWrap: "wrap",
-        // background:"red"
       }}
     >
       {features.map((feature) => (
-        <Feature {...feature} />
+        <Feature {...feature} key={feature.feature} />
       ))}
     </Box>
   );
