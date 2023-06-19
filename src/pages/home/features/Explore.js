@@ -47,7 +47,7 @@ const Explore = () => {
           },
         }}
       >
-        Transforming Jwellery Ownership With the Power of NFTs!
+        Transforming Jewellery Ownership With the Power of NFTs!
       </Typography>
       {/* </Centered> */}
 
