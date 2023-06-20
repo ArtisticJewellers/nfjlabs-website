@@ -3,7 +3,7 @@ import Banner from "./banner";
 import Artists from "./artists";
 import Marketplace from "./marketplace";
 import Metaverse from "./Metaverse";
-import Features from "./features";
+// import Features from "./features";
 import Collaborations from "./collaborations";
 import Partners from "./partners";
 import FAQ from "./faq";
@@ -17,7 +17,7 @@ const Home = () => {
     <>
       <Banner />
       <Stats />
-      <Features />
+      {/* <Features /> */}
       <FeaturesNew />
       <Marketplace />
       <Metaverse />

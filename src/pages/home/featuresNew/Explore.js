@@ -2,24 +2,11 @@ import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import Centered from "../../../components/common/Centered";
 import ExploreBtn from "./ExploreBtn";
-import animatedGif from "../../../assets/homePage/features/https___app.lottiefiles.com_animation_169119ea-aa1d-4687-821d-87c5d19ac7fa.gif";
+import animatedGif from "../../../assets/homePage/features/nft.gif";
 
 const Explore = () => {
   return (
-    <Box
-    // sx={{
-    //   width: {
-    //     xs: "100%",
-    //     sm: "100%",
-    //     md: "45%",
-    //   },
-    //   marginBottom: {
-    //     xs: "20px",
-    //     sm: "35px",
-    //     md: "0px",
-    //   },
-    // }}
-    >
+    <Box>
       <Centered>
         {/* HEADDING */}
         <Typography
@@ -67,8 +54,8 @@ const Explore = () => {
               "linear-gradient(92.52deg, #12161D -3.38%, #272B33 100%)",
             fontSize: "18px",
             paddingX: 6,
-            paddingY:"12px",
-            marginY:2
+            paddingY: "12px",
+            marginY: 3,
           }}
         >
           Know more
