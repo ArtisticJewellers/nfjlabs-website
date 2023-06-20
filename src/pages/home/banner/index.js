@@ -30,6 +30,7 @@ const Banner = () => {
               sx={{
                 fontSize: { sx: "10px", sm: "15px", md: "20px" },
                 marginY: 2,
+                textAlign:"center"
               }}
             >
               Next-Gen Jewellery Polished With Innovation

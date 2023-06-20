@@ -10,6 +10,7 @@ import FAQ from "./faq";
 import Footer from "./footer";
 import Gallery from "./gallery";
 import Stats from "./stats";
+import FeaturesNew from "./featuresNew";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Banner />
       <Stats />
       <Features />
+      <FeaturesNew />
       <Marketplace />
       <Metaverse />
       <Artists />
