@@ -48,6 +48,8 @@ const NFJFeatures = () => {
           sx={{
             // height: { xs: "350px", sm: "300px", md: "400px" },
             width: "255px",
+            minHeight:{xs:"", md:"255px", lg:"320px"},
+            
             padding: 1,
             marginBottom: "40px",
             borderRadius: "3px",
@@ -123,7 +125,7 @@ const NFJFeatures = () => {
       sx={{
         width: "100%",
         display: "flex",
-        // alignItems: "center",
+        alignItems: "start",
         justifyContent: "space-around",
         flexWrap: "wrap",
       }}
