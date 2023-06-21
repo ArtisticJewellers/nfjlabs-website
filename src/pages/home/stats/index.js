@@ -2,6 +2,7 @@ import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import backgroundImage from "../../../assets/homePage/artists/artistTexture.webp";
 import Centered from "../../../components/common/Centered";
+import diamondAnim from "../../../assets/homePage/stats/https___lottiefiles.com_138688-0101j-ac-01.gif";
 
 const Stats = () => {
   const DisplayInfo = ({ type, value }) => {
@@ -73,18 +74,31 @@ const Stats = () => {
             <DisplayInfo type={stat.type} value={stat.value} />
           ))}
         </Box>
-        <Typography
-          fontWeight="500"
-          color="#B5B5B5"
+        <Box
           sx={{
-            textAlign: { xs: "center", sm: "center", md: "right" },
-            fontSize: { xs: "25px", sm: "40px", md: "30px", lg: "40px" },
             width: { xs: "100%", sm: "100%", md: "50%" },
-            marginTop: { xs: "30px" },
+            // background: "red",
+            display:{xs:"block", md:"flex"}
           }}
         >
-          Reasons to Count on Us
-        </Typography>
+          <Box sx={{flexGrow:1, display:{xs:"none", md:"block"}}} />
+          <Centered>
+          <img src={diamondAnim} width="150px" />
+          <Typography
+            fontWeight="500"
+            color="#FFC84A"
+            sx={{
+              textAlign: { xs: "center", sm: "center", md: "right" },
+              fontSize: { xs: "15px", sm: "30px", md: "20px", lg: "30px" },
+              // width: { xs: "100%", sm: "100%", md: "50%" },
+
+              // marginTop: { xs: "30px" },
+            }}
+          >
+            Reasons to Count on Us
+          </Typography>
+          </Centered>
+        </Box>
       </Container>
     </Box>
   );
