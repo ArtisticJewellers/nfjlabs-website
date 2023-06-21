@@ -68,7 +68,7 @@ const TeamTabs = ({ onChange }) => {
         sx={{ height: { xs: "50px", sm: "", md: "" }, padding: "0px" }}
       >
         <Tab
-          label="Current team"
+          label="Founding team"
           icon={0 === value ? <ActiveIcon /> : <InActiveIcon />}
           sx={0 === value ? tabStyle : inactiveTabStyle}
         />

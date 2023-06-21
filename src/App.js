@@ -28,6 +28,8 @@ function App() {
         <Route path="/gallery" element={<Gallery/>} />
 
         <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/member-detail" element={<Marketplace />} />
+
       </Routes>
     </>
   );

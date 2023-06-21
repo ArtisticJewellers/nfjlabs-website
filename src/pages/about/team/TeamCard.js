@@ -12,6 +12,7 @@ const TeamCard = ({ img, name, role }) => {
         background: "#ffffff",
         padding: { xs: 1, sm: 2, md: 2, lg: 3 },
         borderRadius: { xs: "10px", sm: "20px", md: "30px" },
+        cursor: "pointer",
       }}
     >
       <Centered>

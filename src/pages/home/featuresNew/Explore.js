@@ -19,7 +19,7 @@ const Explore = () => {
               lg: "40px",
             },
             textAlign: "center",
-            width: "70%",
+            width: { xs: "90%", sm: "70%", md: "70%" },
           }}
         >
           Transforming Jewellery Ownership With the Power of{" "}
@@ -37,7 +37,7 @@ const Explore = () => {
               md: "17px",
               lg: "22px",
             },
-            width: "70%",
+            width: { xs: "90%", sm: "70%", md: "70%" },
             color: "#020E19",
             textAlign: "center",
           }}
