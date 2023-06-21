@@ -8,21 +8,28 @@ import website from "../../../assets/about/milestones/website.png";
 import pastVisit from "../../../assets/about/milestones/pastVisit.png";
 import sign from "../../../assets/about/milestones/sign.png";
 import audit from "../../../assets/about/milestones/audit.png";
-import connector from "../../../assets/about/milestones/connector.svg";
+
+import ideaIn from "../../../assets/about/milestones/ideaIn.png";
+import visitIn from "../../../assets/about/milestones/visitIn.png";
+import websiteIn from "../../../assets/about/milestones/websiteIn.png";
+import pastVisitIn from "../../../assets/about/milestones/pastVisitIn.png";
+import signIn from "../../../assets/about/milestones/signIn.png";
+import auditIn from "../../../assets/about/milestones/auditIn.png";
+
 import Connector from "./Connector";
 
 const MilestoneRadioBtn = ({ onChange }) => {
   const [activeBtn, setActiveBtn] = useState(0);
   const milestonesData = [
-    { img: idea, bg: "#FDA53C" },
-    { img: visit, bg: "#E14956" },
-    { img: website, bg: "#8C103E" },
-    { img: pastVisit, bg: "#64D0DB" },
-    { img: sign, bg: "#33B1E4" },
-    { img: audit, bg: "#065382" },
+    { img: idea, inImg: ideaIn },
+    { img: visit, inImg: visitIn },
+    { img: website, inImg: websiteIn },
+    { img: pastVisit, inImg: pastVisitIn },
+    { img: sign, inImg: signIn },
+    { img: audit, inImg: auditIn },
   ];
 
-  const Milestone = ({ img, bg, index }) => {
+  const Milestone = ({ img, inImg, bg, index }) => {
     const onClick = () => {
       setActiveBtn(index);
       onChange(index);
@@ -32,11 +39,12 @@ const MilestoneRadioBtn = ({ onChange }) => {
         <Box
           onClick={onClick}
           sx={{
-            background: index == activeBtn ? bg : `${bg}40`,
+            background: index == activeBtn ? "#BBBC8D" : "",
             height: { xs: "45px", sm: "70px", md: "100px", lg: "150px" },
             width: { xs: "45px", sm: "70px", md: "100px", lg: "150px" },
             borderRadius: "50%",
             cursor: "pointer",
+            border: "4px solid #D4D4B6",
             transition: {
               backgroundColor: {
                 duration: "0.5s",
@@ -46,7 +54,7 @@ const MilestoneRadioBtn = ({ onChange }) => {
           }}
         >
           <Centered bothAxis>
-            <img src={img} width="35%" alt="milestone-icon" />
+            <img src={index == activeBtn ? img : inImg} width="35%" alt="milestone-icon" />
           </Centered>
         </Box>
       </>
