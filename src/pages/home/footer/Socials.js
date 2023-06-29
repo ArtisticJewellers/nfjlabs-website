@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 
 const Socials = () => {
   const redirect = (link) => {
-    window.location.href = link;
+    window.open(link, "_blank");
   };
   return (
     <div>

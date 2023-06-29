@@ -10,7 +10,7 @@ import Spacer from "../../../components/common/Spacer";
 const FeaturesNew = () => {
   return (
     <Container>
-      <Box sx={{marginY:6}}>
+      <Box sx={{marginY:20}}>
       <Explore />
       <Spacer size={30}/>
       <NFJFeatures />
