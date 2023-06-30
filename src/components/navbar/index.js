@@ -31,6 +31,7 @@ function NavBar(props) {
   const { windowObj } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const navigate = useNavigate();
+  const navbuttonSize = "19px";
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -137,7 +138,11 @@ function NavBar(props) {
                 {leftNavItems.map((item, index) => (
                   <Button
                     key={item}
-                    sx={{ color: "black", marginX: "5px" }}
+                    sx={{
+                      color: "black",
+                      marginX: "5px",
+                      fontSize: navbuttonSize,
+                    }}
                     onClick={() => {
                       navigate(`/${leftNavRoutes[index]}`);
                     }}
@@ -154,7 +159,11 @@ function NavBar(props) {
               <Row sx={{ width: "36%", justifyContent: "center" }}>
                 <Box flexGrow={20} />
                 <Button
-                  sx={{ color: "black", textDecoration: "none" }}
+                  sx={{
+                    color: "black",
+                    textDecoration: "none",
+                    fontSize: navbuttonSize,
+                  }}
                   component={Link}
                   to={links.marketplace}
                 >
@@ -162,7 +171,11 @@ function NavBar(props) {
                 </Button>
                 <Box flexGrow={1} />
                 <Button
-                  sx={{ color: "black", textDecoration: "none" }}
+                  sx={{
+                    color: "black",
+                    textDecoration: "none",
+                    fontSize: navbuttonSize,
+                  }}
                   component={Link}
                   to={links.metaverse}
                 >
