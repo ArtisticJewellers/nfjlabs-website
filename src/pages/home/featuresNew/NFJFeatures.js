@@ -48,15 +48,20 @@ const NFJFeatures = () => {
           sx={{
             // height: { xs: "350px", sm: "300px", md: "400px" },
             width: "255px",
-            minHeight: { xs: "", md: "255px", lg: "320px" },
+            height: {
+              xs: expanded ? "275px" : "200px",
+              sm: expanded ? "350px" : "250px",
+              md: expanded ? "420px" : "275px",
+              lg: expanded ? "550px" : "350px",
+            },
 
             padding: 2,
             marginBottom: "40px",
             borderRadius: "3px",
             boxShadow:
               "3.64019px 3.64019px 29.1215px rgba(173, 173, 173, 0.25)",
-            // transition: "height 0.3s ease",
-            // overflow: "hidden",
+            transition: "height 0.3s ease",
+            overflow: "hidden",
           }}
         >
           <Centered>
@@ -102,9 +107,6 @@ const NFJFeatures = () => {
                 },
                 // color: "#808080",
                 textAlign: "center",
-                // maxHeight: expanded ? "none" : "100px",
-                transition: "max-height 0.3s ease",
-                overflow: "hidden",
               }}
             >
               {expanded ? detail : truncateString(detail, 155)}
