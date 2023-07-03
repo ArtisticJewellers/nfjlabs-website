@@ -3,14 +3,18 @@ import Banner from "./Banner";
 import Spacer from "../../components/common/Spacer";
 import News from "../about/news";
 import Introduction from "./Introduction";
+import { useParams } from "react-router-dom";
 
 const TeamDetails = () => {
   useEffect(() => {
-    console.log("inside banner------>");
+    window.scrollTo(0, 0);
   }, []);
+
+  const { id } = useParams();
+
   return (
     <>
-    <Spacer size={50}/>
+      <Spacer size={50} />
       <Banner />
       <Introduction />
       <News />

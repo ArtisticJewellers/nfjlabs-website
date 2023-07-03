@@ -3,7 +3,7 @@ import { Email, Facebook, LinkedIn, Twitter } from "@mui/icons-material";
 import Row from "../../components/common/Row";
 import Heading from "../../components/common/Headding";
 
-import naman from "../../assets/about/team/naman.webp";
+import naman from "../../assets/about/team/naman/naman.webp";
 
 const Introduction = () => {
   const iconStyle = {

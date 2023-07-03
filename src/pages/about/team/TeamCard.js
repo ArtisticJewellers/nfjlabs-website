@@ -1,6 +1,5 @@
 import { Box, Chip, Container, Typography } from "@mui/material";
 import React from "react";
-import naman from "../../../assets/about/team/naman.webp";
 import Centered from "../../../components/common/Centered";
 import Navigate from "../../../components/common/Navigate";
 

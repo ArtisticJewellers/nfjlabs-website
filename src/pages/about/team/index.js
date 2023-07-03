@@ -8,9 +8,9 @@ import Row from "../../../components/common/Row";
 import Spacer from "../../../components/common/Spacer";
 
 //team members
-import naman from "../../../assets/about/team/naman.webp";
-import alesio from "../../../assets/about/team/alessio.webp";
-import devchand from "../../../assets/about/team/devchand.webp";
+import naman from "../../../assets/about/team/naman/naman.webp";
+import alesio from "../../../assets/about/team/alessio/alessio.webp";
+import devchand from "../../../assets/about/team/devchand/devchand.webp";
 
 const Team = () => {
   const foundingTeamInfo = [
@@ -38,9 +38,9 @@ const Team = () => {
             marginY: 5,
           }}
         >
-          {
-            foundingTeamInfo.map((member)=>(<TeamCard {...member}/>))
-          }
+          {foundingTeamInfo.map((member) => (
+            <TeamCard {...member} />
+          ))}
           {/* <TeamCard />
           <TeamCard /> */}
         </Row>

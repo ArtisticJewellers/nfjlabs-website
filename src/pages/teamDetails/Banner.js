@@ -1,6 +1,6 @@
 import { Box, Container } from "@mui/material";
 import React, { useEffect } from "react";
-import backgroundImage from "../../assets/about/team/naman/banner.png";
+import backgroundImage from "../../assets/about/team/naman/banner.webp";
 import greetings from "../../assets/about/team/naman/greetings.png";
 
 const Banner = () => {
