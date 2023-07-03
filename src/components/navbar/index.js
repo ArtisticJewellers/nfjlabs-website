@@ -142,6 +142,7 @@ function NavBar(props) {
                       color: "black",
                       marginX: "5px",
                       fontSize: navbuttonSize,
+                      fontWeight: "400",
                     }}
                     onClick={() => {
                       navigate(`/${leftNavRoutes[index]}`);
@@ -163,6 +164,7 @@ function NavBar(props) {
                     color: "black",
                     textDecoration: "none",
                     fontSize: navbuttonSize,
+                    fontWeight: "400",
                   }}
                   component={Link}
                   to={links.marketplace}
@@ -175,6 +177,7 @@ function NavBar(props) {
                     color: "black",
                     textDecoration: "none",
                     fontSize: navbuttonSize,
+                    fontWeight: "400",
                   }}
                   component={Link}
                   to={links.metaverse}

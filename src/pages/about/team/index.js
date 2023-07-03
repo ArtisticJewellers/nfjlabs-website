@@ -7,7 +7,22 @@ import TeamCard from "./TeamCard";
 import Row from "../../../components/common/Row";
 import Spacer from "../../../components/common/Spacer";
 
+//team members
+import naman from "../../../assets/about/team/naman.webp";
+import alesio from "../../../assets/about/team/alessio.webp";
+import devchand from "../../../assets/about/team/devchand.webp";
+
 const Team = () => {
+  const foundingTeamInfo = [
+    { name: "Naman Siddharth", designation: "CEO & Founder", img: naman },
+    { name: "Alessio Boschi", designation: "Founding Designer", img: alesio },
+    {
+      name: "Devchand Chodhry",
+      designation: "Founding Jeweller",
+      img: devchand,
+    },
+  ];
+
   return (
     <>
       <Container>
@@ -23,8 +38,11 @@ const Team = () => {
             marginY: 5,
           }}
         >
-          <TeamCard />
-          <TeamCard />
+          {
+            foundingTeamInfo.map((member)=>(<TeamCard {...member}/>))
+          }
+          {/* <TeamCard />
+          <TeamCard /> */}
         </Row>
       </Container>
     </>

@@ -3,22 +3,23 @@ import React from "react";
 import naman from "../../../assets/about/team/naman.webp";
 import Centered from "../../../components/common/Centered";
 
-const TeamCard = ({ img, name, role }) => {
+const TeamCard = ({ name, designation, img }) => {
   return (
     <Box
       sx={{
-        width: { xs: "150px", sm: "200px", md: "300px", lg: "400px" },
+        width: { xs: "150px", sm: "200px", md: "250px", lg: "350px" },
         boxShadow: "20px 20px 60px #d9d9d9,-20px -20px 60px #ffffff",
         background: "#ffffff",
         padding: { xs: 1, sm: 2, md: 2, lg: 3 },
         borderRadius: { xs: "10px", sm: "20px", md: "30px" },
         cursor: "pointer",
+        marginTop:"20px"
       }}
     >
       <Centered>
         <Box
           sx={{
-            backgroundImage: `url(${naman})`,
+            backgroundImage: `url(${img})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",
@@ -52,7 +53,7 @@ const TeamCard = ({ img, name, role }) => {
             marginTop: { xs: 2, sm: 3, md: 4 },
           }}
         >
-          Naman Siddharth
+          {name}
         </Typography>
         <Typography
           sx={{
@@ -61,7 +62,7 @@ const TeamCard = ({ img, name, role }) => {
             color: "#a3a19e",
           }}
         >
-          Founder & CEO
+          {designation}
         </Typography>
       </Centered>
     </Box>
