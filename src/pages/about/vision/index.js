@@ -3,7 +3,7 @@ import React from "react";
 import Centered from "../../../components/common/Centered";
 import Headding from "../../../components/common/Headding";
 import Visions from "./Visions";
-import backgroundImage from "../../../assets/about/visions/background.png"
+import backgroundImage from "../../../assets/about/visions/background.webp"
 
 const OurVision = () => {
   return (
