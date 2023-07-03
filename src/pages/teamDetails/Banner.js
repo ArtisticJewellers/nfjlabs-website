@@ -22,9 +22,8 @@ const Banner = () => {
           sx={{
             display: "flex",
             flexDirection: "row-reverse",
-            // padding: 5,
             paddingTop: 25,
-            paddingBottom:10
+            paddingBottom: 10,
           }}
         >
           <Box sx={{ width: { xs: "300px", md: "400px" } }}>
