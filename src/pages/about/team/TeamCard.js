@@ -3,9 +3,9 @@ import React from "react";
 import Centered from "../../../components/common/Centered";
 import Navigate from "../../../components/common/Navigate";
 
-const TeamCard = ({ name, designation, img }) => {
+const TeamCard = ({ name, designation, img, index }) => {
   return (
-    <Navigate to="/member-detail">
+    <Navigate to={`/member-detail/${index + 1}`}>
       <Box
         sx={{
           width: { xs: "150px", sm: "200px", md: "250px", lg: "350px" },

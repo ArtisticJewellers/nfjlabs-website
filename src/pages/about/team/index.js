@@ -38,8 +38,8 @@ const Team = () => {
             marginY: 5,
           }}
         >
-          {foundingTeamInfo.map((member) => (
-            <TeamCard {...member} />
+          {foundingTeamInfo.map((member, index) => (
+            <TeamCard {...member} index={index} />
           ))}
           {/* <TeamCard />
           <TeamCard /> */}

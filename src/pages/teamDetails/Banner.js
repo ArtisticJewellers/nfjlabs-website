@@ -1,9 +1,7 @@
 import { Box, Container } from "@mui/material";
 import React, { useEffect } from "react";
-import backgroundImage from "../../assets/about/team/naman/banner.webp";
-import greetings from "../../assets/about/team/naman/greetings.png";
 
-const Banner = () => {
+const Banner = ({ bg, greeting }) => {
   useEffect(() => {
     console.log("inside banner------>");
   }, []);
@@ -11,7 +9,7 @@ const Banner = () => {
   return (
     <Box
       sx={{
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `url(${bg})`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -27,7 +25,7 @@ const Banner = () => {
           }}
         >
           <Box sx={{ width: { xs: "300px", md: "400px" } }}>
-            <img width="100%" src={greetings} />
+            <img width="100%" src={greeting} />
           </Box>
         </Box>
       </Container>

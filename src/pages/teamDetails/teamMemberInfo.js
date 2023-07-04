@@ -50,3 +50,5 @@ const teamMember = [
     banner: devchandBanner,
   },
 ];
+
+export { teamMember };

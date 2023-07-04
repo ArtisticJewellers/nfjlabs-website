@@ -29,7 +29,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
 
         <Route path="/marketplace" element={<Marketplace />} />
-        <Route path="/member-detail" element={<TeamDetails />} />
+        <Route path="/member-detail/:id" element={<TeamDetails />} />
       </Routes>
     </>
   );

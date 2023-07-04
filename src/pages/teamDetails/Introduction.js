@@ -1,32 +1,41 @@
 import { Box, Container, IconButton, Typography } from "@mui/material";
-import { Email, Facebook, LinkedIn, Twitter } from "@mui/icons-material";
 import Row from "../../components/common/Row";
 import Heading from "../../components/common/Headding";
 
-import naman from "../../assets/about/team/naman/naman.webp";
+// ICON IMAGES
+import facebookIcon from "../../assets/about/team/fb.png";
+import twitterIcon from "../../assets/about/team/twitter.png";
+import gmailIcon from "../../assets/about/team/gmail.png";
+import linkedinIcon from "../../assets/about/team/linkedin.png";
 
-const Introduction = () => {
-  const iconStyle = {
-    fontSize: "50px",
-    color: "#ffc33b",
-  };
-
+const Introduction = ({
+  name,
+  intro,
+  image,
+  fbLink,
+  twitterLink,
+  linkedInLink,
+  gmailLink,
+}) => {
   const renderIcons = () => {
     const icons = [
-      { icon: Facebook, label: "Facebook" },
-      { icon: Twitter, label: "Twitter" },
-      { icon: Email, label: "Email" },
-      { icon: LinkedIn, label: "LinkedIn" },
+      { icon: facebookIcon, link: fbLink },
+      { icon: twitterIcon, link: twitterLink },
+      { icon: gmailIcon, link: gmailLink },
+      { icon: linkedinIcon, link: linkedInLink },
     ];
 
-    return icons.map((item, index) => {
-      const IconComponent = item.icon;
-      return (
-        <IconButton key={index} aria-label={item.label}>
-          <IconComponent sx={iconStyle} />
-        </IconButton>
-      );
-    });
+    return icons.map((item, index) => (
+      <IconButton
+        key={index}
+        aria-label={item.label}
+        onClick={() => {
+          window.open(item.link, "_blank");
+        }}
+      >
+        <img src={item.icon} width="50px" alt={item.label} />
+      </IconButton>
+    ));
   };
 
   return (
@@ -34,22 +43,28 @@ const Introduction = () => {
       <Row>
         <Box sx={{ width: { xs: "100%", md: "50%" } }}>
           <Box marginLeft={2}>
-            <Heading>Naman Sidharth</Heading>
+            <Heading>{name}</Heading>
             <Box sx={{ display: { xs: "block", sm: "block", md: "none" } }}>
-              <img src={naman} width="200px" style={{ borderRadius: "10px" }} />
+              <img
+                src={image}
+                width="200px"
+                style={{ borderRadius: "10px" }}
+                alt="Member Image"
+              />
             </Box>
-            <Typography paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              ultrices, velit sit amet consequat aliquet, justo urna vestibulum
-              lectus, at iaculis nunc nulla ut purus. Sed tempus libero id leo
-              posuere fermentum...
-            </Typography>
+            <Typography paragraph>{intro}</Typography>
           </Box>
-
+          {/* SOCIAL ICONS */}
           <Row sx={{ justifyContent: "start" }}>{renderIcons()}</Row>
         </Box>
+        {/* MEMBER IMAGE */}
         <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
-          <img src={naman} width="350px" style={{ borderRadius: "20px" }} />
+          <img
+            src={image}
+            width="350px"
+            style={{ borderRadius: "20px" }}
+            alt="Member Image"
+          />
         </Box>
       </Row>
     </Container>
