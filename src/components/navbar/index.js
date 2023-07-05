@@ -24,14 +24,14 @@ import { useEffect } from "react";
 const drawerWidth = 240;
 
 function NavBar(props) {
-  const leftNavItems = ["Home", "About us", "Blog", "Gallery"];
+  const leftNavItems = ["Home", "About", "Blog", "Gallery"];
 
   const leftNavRoutes = ["", "about", "blog", "gallery"];
 
   const { windowObj } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const navigate = useNavigate();
-  const navbuttonSize = "19px";
+  const navbuttonSize = "17px";
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);

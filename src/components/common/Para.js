@@ -7,7 +7,7 @@ const Para = ({ text, children, size }) => {
     <Typography paragraph
       sx={{
         fontSize: { xs: "15px", sm: "20px", md: "25px" },
-        fontWeight: 500,
+        fontWeight: 400,
         color: "#A1A1A1",
       }}
     >
