@@ -9,7 +9,7 @@ const B1 = () => {
     description:
       "The diamond industry is often associated with opulence and luxury, but it is also notorious for its lack of transparency and accountability. In recent years, blockchain technology has emerged as a game-changer in this industry. Blockchain, which is essentially a decentralized digital ledger, can help track the journey of a diamond from its origin to its final destination, ensuring authenticity, ethical sourcing, and transparency throughout the supply chain.",
     bgImage: blogImage,
-    writer: "Writer Name",
+    writer: "Pallavi Narang",
   };
   return (
     <>

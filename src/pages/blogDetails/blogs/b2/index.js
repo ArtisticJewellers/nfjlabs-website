@@ -9,7 +9,7 @@ const B2 = () => {
     description:
       "Blockchain technology is changing the jewellery industry. It’s changing how we buy, sell and make jewellery.The blockchain is a digital ledger that records transactions between parties in a permanent way, allowing them to be tracked and verified. It’s this ability to track and verify transactions that makes it so useful for the jewellery industry.",
     bgImage: blogImage,
-    writer: "Writer Name",
+    writer: "Pallavi Narang",
   };
   return (
     <>

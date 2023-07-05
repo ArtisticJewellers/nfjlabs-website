@@ -67,7 +67,7 @@ const Banner = ({ bannerDetails }) => {
             </Typography>
             <Row sx={{ marginY: 2 }}>
               <Row>
-                <Avatar text="AN" size={35} />
+                <Avatar text="PN" size={35} />
                 <Spacer row size={10} />
                 <Box>
                   <Typography
@@ -83,7 +83,7 @@ const Banner = ({ bannerDetails }) => {
                 </Box>
               </Row>
 
-              <Button variant="contained">Subscribe</Button>
+              {/* <Button variant="contained">Subscribe</Button> */}
             </Row>
             <Divider />
           </Container>

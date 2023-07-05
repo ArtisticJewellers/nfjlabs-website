@@ -9,7 +9,7 @@ const B4 = () => {
     description:
       "The world of fashion and jewelry is undergoing a transformation with the introduction of wearable NFTs. NFTs, or Non-Fungible Tokens, have been making waves in the art and collectibles world, but now they're starting to make their way into the world of fashion and jewelry. This new trend is shaking up the traditional jewelry industry and offering a unique and exciting way to own and display wearable pieces.",
     bgImage: blogImage,
-    writer: "Writer Name",
+    writer: "Pallavi Narang",
   };
   return (
     <>

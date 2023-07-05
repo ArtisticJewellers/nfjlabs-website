@@ -12,7 +12,7 @@ import Mobile from "./Mobile";
 const TopStories = () => {
   const stories = [
     {
-      id:1,
+      id: 1,
       title: "How is Blockchain Shaping the Diamond Industry?",
       description:
         "The diamond industry is often associated with opulence and luxury, but it is also notorious for its lack of transparency and accountability. In recent years, blockchain technology has emerged as a game-changer in this industry.",
@@ -20,15 +20,18 @@ const TopStories = () => {
       views: "2.5k",
       image: b1,
     },
-    {      id:2,
+    {
+      id: 2,
 
       title: "How Blockchain Technology is Changing the Jewellery Industry?",
       description:
         "The blockchain is a digital ledger that records transactions between parties in a permanent way, allowing them to be tracked and verified. It’s this ability to track and verify transactions that makes it so useful for the jewellery industry.",
+      writer: "Pallavi Narang ",
       views: "2.5k",
       image: b2,
     },
-    {      id:3,
+    {
+      id: 3,
 
       title: "The Future of Jewellery Manufacturing and the Role of Technology",
       description:
@@ -37,7 +40,8 @@ const TopStories = () => {
       views: "2.5k",
       image: b3,
     },
-    {      id:4,
+    {
+      id: 4,
 
       title: "Wearable NFTs — Everything There’s To Know About Them",
       description:
@@ -46,7 +50,8 @@ const TopStories = () => {
       views: "2.5k",
       image: b4,
     },
-    {      id:5,
+    {
+      id: 5,
 
       title: "Can NFTs Work for Luxury Jewellery?",
       description:

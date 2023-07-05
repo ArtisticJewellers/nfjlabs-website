@@ -9,7 +9,7 @@ const B5 = () => {
     description:
       "The most obvious place to start when considering the application of NFTs is luxury goods. Why? Because luxury goods are often characterised by their collectability, which lends itself well to the notion of scarcity and exclusivity.",
     bgImage: blogImage,
-    writer: "Writer Name",
+    writer: "Pallavi Narang",
   };
   return (
     <>
