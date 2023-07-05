@@ -16,7 +16,7 @@ const TopStories = () => {
       title: "How is Blockchain Shaping the Diamond Industry?",
       description:
         "The diamond industry is often associated with opulence and luxury, but it is also notorious for its lack of transparency and accountability. In recent years, blockchain technology has emerged as a game-changer in this industry.",
-      writer: "writer Name",
+      writer: "Pallavi Narang ",
       views: "2.5k",
       image: b1,
     },
@@ -33,7 +33,7 @@ const TopStories = () => {
       title: "The Future of Jewellery Manufacturing and the Role of Technology",
       description:
         "Technology is changing the jewellery manufacturing industry at a rapid pace. The future of jewellery manufacturing will be all about using technology to create more efficient, cost-effective, innovative products.",
-      writer: "writer Name",
+      writer: "Pallavi Narang ",
       views: "2.5k",
       image: b3,
     },
@@ -42,7 +42,7 @@ const TopStories = () => {
       title: "Wearable NFTs — Everything There’s To Know About Them",
       description:
         "The world of fashion and jewelry is undergoing a transformation with the introduction of wearable NFTs. NFTs, or Non-Fungible Tokens, have been making waves in the art and collectibles world, but now they're starting to make their way into the world of fashion and jewelry.",
-      writer: "writer Name",
+      writer: "Pallavi Narang ",
       views: "2.5k",
       image: b4,
     },
@@ -51,7 +51,7 @@ const TopStories = () => {
       title: "Can NFTs Work for Luxury Jewellery?",
       description:
         "The most obvious place to start when considering the application of NFTs is luxury goods. Why? Because luxury goods are often characterised by their collectability, which lends itself well to the notion of scarcity and exclusivity.",
-      writer: "writer Name",
+      writer: "Pallavi Narang ",
       views: "2.5k",
       image: b5,
     },
