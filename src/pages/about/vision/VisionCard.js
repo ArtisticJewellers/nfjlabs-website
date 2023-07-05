@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Row from "../../../components/common/Row";
 import { Box, Typography } from "@mui/material";
 import Spacer from "../../../components/common/Spacer";
@@ -8,6 +8,14 @@ import truncateString from "../../../helpers/truncateString";
 
 const VisionCard = ({ vision }) => {
   const { title, description, img } = vision;
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleDescription = () => {
+    setExpanded(!expanded);
+  };
+
+  const truncatedDescription = truncateString(description, 200);
+
   return (
     <>
       <Row
@@ -25,7 +33,19 @@ const VisionCard = ({ vision }) => {
             <img src={img} width="100%" alt={title} />
           </Centered>
         </Box>
-        <Box sx={{ width: "55%" }}>
+        <Box
+          sx={{
+            width: "55%",
+            height: {
+              xs: expanded ? "275px" : "200px",
+              sm: expanded ? "350px" : "250px",
+              md: expanded ? "420px" : "275px",
+              lg: expanded ? "300px" : "240px",
+            },
+            transition: "height 0.3s ease",
+            overflow: "hidden",
+          }}
+        >
           <Typography
             sx={{
               fontWeight: 600,
@@ -42,10 +62,9 @@ const VisionCard = ({ vision }) => {
               width: "90%",
             }}
           >
-            {truncateString(description, 200)}
+            {expanded ? description : truncatedDescription}
           </Typography>
           <Spacer size={12} />
-          {/* <Box display="inline"> */}
           <Row>
             <Typography
               color="primary"
@@ -54,8 +73,9 @@ const VisionCard = ({ vision }) => {
                 fontSize: { xs: "9px", sm: "15px", md: "15px" },
                 cursor: "pointer",
               }}
+              onClick={toggleDescription}
             >
-              Explore more
+              {expanded ? "Read less" : "Read more"}
             </Typography>
             <East
               sx={{
@@ -66,7 +86,6 @@ const VisionCard = ({ vision }) => {
             />
             <Box flexGrow={1} />
           </Row>
-          {/* </Box> */}
         </Box>
       </Row>
     </>
