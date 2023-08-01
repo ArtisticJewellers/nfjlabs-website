@@ -36,12 +36,12 @@ const VisionCard = ({ vision }) => {
         <Box
           sx={{
             width: "55%",
-            height: {
-              xs: expanded ? "275px" : "200px",
-              sm: expanded ? "350px" : "250px",
-              md: expanded ? "420px" : "275px",
-              lg: expanded ? "300px" : "240px",
-            },
+            // height: {
+            //   xs: expanded ? "220px" : "160px",
+            //   sm: expanded ? "300px" : "210px",
+            //   md: expanded ? "300px" : "240px",
+            //   lg: expanded ? "300px" : "240px",
+            // },
             transition: "height 0.3s ease",
             overflow: "hidden",
           }}
@@ -64,7 +64,7 @@ const VisionCard = ({ vision }) => {
           >
             {expanded ? description : truncatedDescription}
           </Typography>
-          <Spacer size={12} />
+          {/* <Spacer size={5} /> */}
           <Row>
             <Typography
               color="primary"

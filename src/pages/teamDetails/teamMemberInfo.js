@@ -16,11 +16,13 @@ const teamMember = [
   {
     name: "Naman Sidharth",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices, velit sit amet consequat aliquet, justo urna vestibulum lectus, at iaculis nunc nulla ut purus. Sed tempus libero id leo posuere fermentum...",
+      "With a decade of experience in the management consulting with expertise in finance, Naman is the man behind the idea and execution of this game changer.",
     fbLink: "https://nfjlabs.com/",
-    twitterLink: "https://nfjlabs.com/",
-    linkedInLink: "https://nfjlabs.com/",
-    gmailLink: "https://nfjlabs.com/",
+    twitterLink:
+      "https://twitter.com/naman_sidharth?t=7APsHxydkj3tkxQ0ugD36w&s=08",
+    linkedInLink: "https://www.linkedin.com/in/naman-sidharth",
+    gmailLink:
+      "https://mail.google.com/mail/?view=cm&to=naman.sidharth@nfjlabs.com",
     image: naman,
     greetingImg: namanGreeting,
     banner: namanBanner,
@@ -28,11 +30,13 @@ const teamMember = [
   {
     name: "Alessio Boschi",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices, velit sit amet consequat aliquet, justo urna vestibulum lectus, at iaculis nunc nulla ut purus. Sed tempus libero id leo posuere fermentum...",
+      "Alessio has been delighting the jewelry world with his whimsical and exquisite creations for over 30 years. He is a Guinness Book of World Record holder who brings credibility along with his creative expertise in the niche market.",
     fbLink: "https://nfjlabs.com/",
-    twitterLink: "https://nfjlabs.com/",
-    linkedInLink: "https://nfjlabs.com/",
-    gmailLink: "https://nfjlabs.com/",
+    twitterLink:
+      "https://twitter.com/ABoschiJewels?t=Rg9CZ00roUbGZ7si52ElmQ&s=08",
+    linkedInLink: "https://www.linkedin.com/in/alessioboschi",
+    gmailLink:
+      "https://mail.google.com/mail/?view=cm&to=alessio.boshchi@nfjlabs.com",
     image: alessio,
     greetingImg: alessioGreeting,
     banner: alessioBanner,
@@ -40,11 +44,12 @@ const teamMember = [
   {
     name: "Devchand Chodhry",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices, velit sit amet consequat aliquet, justo urna vestibulum lectus, at iaculis nunc nulla ut purus. Sed tempus libero id leo posuere fermentum...",
+      "He's the mind who puts the mission on wheels, and bringing years of experience to ensure a smooth and efficient supply chain. As a 2nd generation pearl farmer with 4 jewellery manufacturing units in Asia, his nexus navigates the mission on the best-possible track.",
     fbLink: "https://nfjlabs.com/",
     twitterLink: "https://nfjlabs.com/",
     linkedInLink: "https://nfjlabs.com/",
-    gmailLink: "https://nfjlabs.com/",
+    gmailLink:
+      "https://mail.google.com/mail/?view=cm&to=devchand.chodhry@nfjlabs.com",
     image: devchand,
     greetingImg: devchandGreeting,
     banner: devchandBanner,
